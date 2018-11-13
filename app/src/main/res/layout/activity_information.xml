@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:noHistory="true"
-    tools:context=".Information">
+    tools:context=".ui.Information">
 
     <ImageView
         android:id="@+id/iv_logoInfo"

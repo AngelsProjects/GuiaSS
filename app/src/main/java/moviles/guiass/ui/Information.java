@@ -1,4 +1,4 @@
-package moviles.guiass;
+package moviles.guiass.ui;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -11,6 +11,7 @@ import butterknife.BindView;
 import butterknife.BindViews;
 import butterknife.ButterKnife;
 import moviles.guiass.Enum.MenuOptionsEnum;
+import moviles.guiass.R;
 
 
 public class Information extends AppCompatActivity {
@@ -23,7 +24,6 @@ public class Information extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_information);
         ButterKnife.bind(this);
-        Intent intent = getIntent();
         Bundle bundle = getIntent().getExtras();
         int option = bundle.getInt("InfoOption");
         MenuOptionsEnum selected = MenuOptionsEnum.valueOf(option);

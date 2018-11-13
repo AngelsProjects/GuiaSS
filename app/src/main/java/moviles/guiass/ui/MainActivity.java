@@ -1,4 +1,4 @@
-package moviles.guiass;
+package moviles.guiass.ui;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -10,13 +10,12 @@ import java.util.List;
 
 import butterknife.BindViews;
 import butterknife.ButterKnife;
+import moviles.guiass.R;
 
 import static moviles.guiass.Enum.MenuOptionsEnum.*;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
-    // @BindView(R.id.btn_req)
-    // Button btnReq;
 
     @BindViews({R.id.btn_req, R.id.btn_dh, R.id.btn_dss, R.id.btn_pp, R.id.btn_ps})
     List<Button> btnsInfo;
