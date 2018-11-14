@@ -10,8 +10,19 @@
     <string name="txt_ps">Pasos siguientes</string>
     <string name="infoDesc">N/A</string>
     <string name="infoTitle">N/A</string>
-
-
+    <string name="title_activity_login">Iniciar sesion</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">No. Control</string>
+    <string name="prompt_password">Clave</string>
+    <string name="action_sign_in">Iniciar sesion</string>
+    <string name="action_sign_in_short">Iniciar sesion</string>
+    <string name="error_invalid_email">El numero de control es incorrecto</string>
+    <string name="error_invalid_password">La contraseña es demaciado corta</string>
+    <string name="error_incorrect_password">La contraseña es incorrecta</string>
+    <string name="error_field_required">Este campo es obligatorio</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
 
 
 </resources>
