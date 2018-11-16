@@ -26,7 +26,15 @@
         <activity android:name=".ui.Information" />
         <activity
             android:name=".ui.LoginActivity"
-            android:label="@string/title_activity_login"></activity>
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".ui.DatosGenerales"
+            android:label="@string/title_activity_datos_generales"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.DondeRealizar"
+            android:label="@string/title_activity_donde_realizar"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

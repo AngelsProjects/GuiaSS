@@ -12,7 +12,7 @@
     <string name="infoTitle">N/A</string>
     <string name="title_activity_login">Iniciar sesion</string>
     <!-- Strings Text  of info-->
-  <string name="textViewInfo3">texto</string>
+    <string name="textViewInfo3">texto</string>
     <string name="textViewInfo4">texto2</string>
     <!-- Strings related to login -->
     <string name="prompt_email">No. Control</string>
@@ -26,6 +26,8 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <string name="title_activity_datos_generales">DatosGenerales</string>
+    <string name="title_activity_donde_realizar">DondeRealizar</string>
 
 
 </resources>
