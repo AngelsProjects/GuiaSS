@@ -28,7 +28,7 @@ public class Information extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         // se manda a llamar la funcioin super que en definicion es como un constructor que guarda la instancia del estado actual
         super.onCreate(savedInstanceState);
-
+        TextView texto1, texto2;
         // aqui se asigna la vista al Activity en este caso estamos en el activity Information
         // y se  le esta asignando la vista del siguiente repositorio
         // R.layout.activity_information
@@ -66,9 +66,30 @@ public class Information extends AppCompatActivity {
         switch (selected) {
             case RequisitosPrevios:
                 description = "Requisitos Previos";
+                texto1=(TextView)findViewById(R.id.textViewInfo3);
+                texto1.setText("¿Que ocupas?");
+                texto2=(TextView)findViewById(R.id.textViewInfo4);
+                texto2.setText("1-Tener 70% de tu carre terminada.\n" +
+                        "-¿No sabes si lo tienes?\n" +
+                        "Entrar a ese link\n" +
+                        "https://sge.mexicali.tecnm.mx/alumnos/historico/kardex-calificaciones\n" +
+                        "Si en ¨Creditos aprobados¨ dice: 182\n" +
+                        "Podras realizar tu servicio\n" +
+                        "2-Saber si ya inicio la inscripsiones.\n" +
+                        "-¿No lo sabes?\n" +
+                        "Acude a las oficinas del servicio social \n" +
+                        "o \n" +
+                        "habla a este telefono: 5804911" +
+                        "3-Contar con los 5 creditos \n" +
+                        "complementarios." +
+                        "-En grado caso de no tener los 182 \n" +
+                        "puntos completos estos seran \n" +
+                        "completados con los 5 creditso.");
                 break;
             case DatosDelServicioSocial:
                 description = "Datos del Servicio Social";
+                texto1=(TextView)findViewById(R.id.textViewInfo3);
+                texto1.setText("Daros generales");
                 break;
             case PrimerosPasos:
                 description = "Primeros Pasos";
