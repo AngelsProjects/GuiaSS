@@ -28,6 +28,7 @@
     </string>
     <string name="title_activity_datos_generales">DatosGenerales</string>
     <string name="title_activity_donde_realizar">DondeRealizar</string>
+    <string name="title_activity_proceso_pasoa_paso">ProcesoPasoaPaso</string>
 
 
 </resources>

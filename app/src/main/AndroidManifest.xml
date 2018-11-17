@@ -34,6 +34,10 @@
         <activity
             android:name=".ui.DondeRealizar"
             android:label="@string/title_activity_donde_realizar"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.ProcesoPasoaPaso"
+            android:label="@string/title_activity_proceso_pasoa_paso"
             android:theme="@style/AppTheme"></activity>
     </application>
 
