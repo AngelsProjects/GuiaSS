@@ -33,6 +33,7 @@ dependencies {
     androidTestImplementation "com.android.support.test:runner:$rootProject.ext.testRunnerVersion"
     androidTestImplementation "com.android.support.test.espresso:espresso-core:$rootProject.ext.espressoVersion"
 
+    implementation "com.github.seasox:android-material-stepper:$rootProject.ext.materialStepperVersion"
     // Retrofit
     implementation "com.squareup.retrofit2:retrofit:$rootProject.ext.retrofitVersion"
     implementation "com.squareup.retrofit2:converter-gson:$rootProject.ext.retrofitVersion"
