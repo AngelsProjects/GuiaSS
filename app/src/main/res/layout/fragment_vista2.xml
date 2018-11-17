@@ -43,7 +43,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0"
-            app:srcCompat="@drawable/ITMdoc" />
+            app:srcCompat="@drawable/itmDoc" />
         <ImageView
             android:id="@+id/iv_logoInfo"
             android:layout_width="65dp"
