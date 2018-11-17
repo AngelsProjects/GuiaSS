@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // para ello se crea un intent en el cual recive dos parametros
         // 1: el contexto del paquete de donde se enviara en este caso es desde la clase MainActivity.this el cual es la clase del activity
         // 2: la clase que del activity que quieres mandar a llamar en etse claso Information.class para acceder a su clase
-        Intent intent = new Intent(MainActivity.this, Information.class);
+        Intent intent;
 
         // creamos una variable bundle para almacenar las variables que le queremos enviar al activity a invocar
         Bundle bundle = new Bundle();
@@ -72,23 +72,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             // para ello se hace lo siguiente bundle.putInt("NOMBRE_DEL_PARAMETRO_A_ENVIAR", VALOR_DEL_PARAMETRO);
 
             case R.id.btn_req:
+                intent = new Intent(MainActivity.this, Information.class);
                 bundle.putInt("InfoOption", RequisitosPrevios.getValue());
-
                 break;
             case R.id.btn_dh:
+                intent = new Intent(MainActivity.this, DondeRealizar.class);
                 bundle.putInt("InfoOption", DondeHacerlo.getValue());
                 break;
             case R.id.btn_dss:
+                intent = new Intent(MainActivity.this, DatosGenerales.class);
                 bundle.putInt("InfoOption", DatosDelServicioSocial.getValue());
                 break;
             case R.id.btn_pp:
+                intent = new Intent(MainActivity.this, ProcesoPasoaPaso.class);
                 bundle.putInt("InfoOption", PrimerosPasos.getValue());
                 break;
             case R.id.btn_ps:
+                intent = new Intent(MainActivity.this, Information.class);
                 bundle.putInt("InfoOption", PasosSiguientes.getValue());
                 break;
             default:
-
+                intent = new Intent(MainActivity.this, Information.class);
                 break;
         }
         // Con nuestra variable intent accedemos a su metodo putExtras para asignarle eseos parametros

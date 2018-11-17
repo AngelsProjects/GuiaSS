@@ -1,4 +1,4 @@
-package moviles.guiass;
+package moviles.guiass.ui.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -8,10 +8,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class Vista2Fragment extends Fragment {
+import moviles.guiass.R;
+
+public class Vista3Fragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_vista2, container, false);
+        return inflater.inflate(R.layout.fragment_vista3, container, false);
     }
 }

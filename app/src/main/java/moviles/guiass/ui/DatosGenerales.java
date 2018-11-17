@@ -19,7 +19,7 @@ public class DatosGenerales extends AppCompatActivity {
         setContentView(R.layout.activity_datos_generales);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
+/*
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,9 +28,9 @@ public class DatosGenerales extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+*/
 
-
-                texto1=(TextView)findViewById(R.id.textViewInfo5);
+        texto1 = (TextView) findViewById(R.id.textViewInfo5);
         texto1.setText("Daros generales");
 
 
