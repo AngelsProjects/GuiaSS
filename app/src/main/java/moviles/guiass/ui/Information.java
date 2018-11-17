@@ -65,31 +65,9 @@ public class Information extends AppCompatActivity {
         // moviles -> guiass -> Enum -> MenuOptionsEnum.java
         switch (selected) {
             case RequisitosPrevios:
-                description = "Requisitos Previos";
-                texto1=(TextView)findViewById(R.id.textViewInfo3);
-                texto1.setText("¿Que ocupas?");
-                texto2=(TextView)findViewById(R.id.textViewInfo4);
-                texto2.setText("1-Tener 70% de tu carre terminada.\n" +
-                        "-¿No sabes si lo tienes?\n" +
-                        "Entrar a ese link\n" +
-                        "https://sge.mexicali.tecnm.mx/alumnos/historico/kardex-calificaciones\n" +
-                        "Si en ¨Creditos aprobados¨ dice: 182\n" +
-                        "Podras realizar tu servicio\n" +
-                        "2-Saber si ya inicio la inscripsiones.\n" +
-                        "-¿No lo sabes?\n" +
-                        "Acude a las oficinas del servicio social \n" +
-                        "o \n" +
-                        "habla a este telefono: 5804911" +
-                        "3-Contar con los 5 creditos \n" +
-                        "complementarios." +
-                        "-En grado caso de no tener los 182 \n" +
-                        "puntos completos estos seran \n" +
-                        "completados con los 5 creditos.");
                 break;
             case DatosDelServicioSocial:
                 description = "Datos del Servicio Social";
-                texto1=(TextView)findViewById(R.id.textViewInfo3);
-                texto1.setText("Daros generales");
                 break;
             case PrimerosPasos:
                 description = "Primeros Pasos";
@@ -104,6 +82,26 @@ public class Information extends AppCompatActivity {
                 description = "Unknown";
 
         }
+        description = "Requisitos Previos";
+        texto1=(TextView)findViewById(R.id.textViewInfo3);
+        texto1.setText("¿Que ocupas?");
+        texto2=(TextView)findViewById(R.id.textViewInfo4);
+        texto2.setText("1-Tener 70% de tu carre terminada.\n" +
+                "-¿No sabes si lo tienes?\n" +
+                "Entrar a ese link\n" +
+                "https://sge.mexicali.tecnm.mx/alumnos/historico/kardex-calificaciones\n" +
+                "Si en ¨Creditos aprobados¨ dice: 182\n" +
+                "Podras realizar tu servicio\n" +
+                "2-Saber si ya inicio la inscripsiones.\n" +
+                "-¿No lo sabes?\n" +
+                "Acude a las oficinas del servicio social \n" +
+                "o \n" +
+                "habla a este telefono: 5804911" +
+                "3-Contar con los 5 creditos \n" +
+                "complementarios." +
+                "-En grado caso de no tener los 182 \n" +
+                "puntos completos estos seran \n" +
+                "completados con los 5 creditso.");
         // como anteriormente teniamos una lista de TEXTVIEWS solo accedemos al text view con su respectiva posicion
         // posicion 0 y 1
         // y se ingresan los textos de descripcion y titulo.
