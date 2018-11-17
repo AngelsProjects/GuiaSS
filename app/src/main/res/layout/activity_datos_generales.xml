@@ -9,7 +9,7 @@
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    >
+    tools:context=".ui.DatosGenerales">
 
     <!-- aqui se carga el ToolBar que se encuentra es res -> layout -> main_toolbar.xml -->
     <include
@@ -28,52 +28,9 @@
         android:layout_height="match_parent"
         android:noHistory="true"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".ui.DatosGenerales"
         tools:layout_editor_absoluteY="56dp"
-        tools:showIn="@layout/activity_datos_generales"
-        tools:context=".ui.DatosGenerales">
-
-        <ImageView
-            android:id="@+id/iv_logoInfo"
-            android:layout_width="65dp"
-            android:layout_height="60dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="5dp"
-            android:contentDescription="@string/img_logoDesc"
-            android:gravity="center"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@mipmap/logo" />
-
-        <TextView
-            android:id="@+id/txt_infoTitle"
-            android:layout_width="287dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="60dp"
-            android:layout_marginLeft="60dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginRight="20dp"
-            android:gravity="center"
-            android:text="@string/infoTitle"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/iv_logoInfo"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
-            android:id="@+id/txt_infoDesc"
-            android:layout_width="287dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
-            android:layout_marginTop="36dp"
-            android:layout_marginRight="20dp"
-            android:gravity="center"
-            android:text="@string/infoDesc"
-            android:textSize="10sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/iv_logoInfo"
-            app:layout_constraintTop_toTopOf="parent" />
+        tools:showIn="@layout/activity_datos_generales">
 
         <ScrollView
             android:id="@+id/sv_main"
@@ -145,25 +102,26 @@ Numero del servicio social: 5-80-49-11"
 
 
                 </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="0dp"
-                android:orientation="horizontal">
 
-            <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:text="Horario"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.17"
-                    app:layout_constraintStart_toStartOf="parent"
-                    tools:layout_editor_absoluteY="212dp" />
-            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="0dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="Horario"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.17"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:layout_editor_absoluteY="212dp" />
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -198,22 +156,24 @@ Proximamente Mapa"
                             app:layout_constraintHorizontal_bias="0.834"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
+
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="0dp"
                             android:layout_marginTop="10dp"
                             android:orientation="horizontal">
-                        <Button
-                            android:id="@+id/button3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="212dp"
-                            android:layout_marginEnd="8dp"
-                            android:text="Mapa"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            tools:layout_editor_absoluteY="431dp" />
+
+                            <Button
+                                android:id="@+id/button3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="212dp"
+                                android:layout_marginEnd="8dp"
+                                android:text="Mapa"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                tools:layout_editor_absoluteY="431dp" />
 
                         </LinearLayout>
                     </LinearLayout>
@@ -221,14 +181,9 @@ Proximamente Mapa"
                 </LinearLayout>
 
 
-
             </LinearLayout>
 
         </ScrollView>
-
-
-
-
 
 
     </android.support.constraint.ConstraintLayout>
