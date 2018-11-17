@@ -84,7 +84,7 @@ public class Information extends AppCompatActivity {
                         "complementarios." +
                         "-En grado caso de no tener los 182 \n" +
                         "puntos completos estos seran \n" +
-                        "completados con los 5 creditso.");
+                        "completados con los 5 creditos.");
                 break;
             case DatosDelServicioSocial:
                 description = "Datos del Servicio Social";

@@ -91,20 +91,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="44dp"
             android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
             android:text="Lista de lugares en la escuela:"
+            app:layout_constraintBottom_toTopOf="@+id/sv_main"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewInfo3"
+            app:layout_constraintTop_toBottomOf="@+id/iv_logoInfo"
             tools:ignore="MissingConstraints" />
 
 
         <ScrollView
             android:id="@+id/sv_main"
-            android:layout_width="430dp"
+            android:layout_width="330dp"
             android:layout_height="95dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="140dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
             <LinearLayout
@@ -125,6 +131,7 @@
                         android:id="@+id/textViewInfo9"
                         android:layout_width="133dp"
                         android:layout_height="21dp"
+                        android:background="@android:color/holo_green_light"
                         android:text="EDECANATO"
                         tools:layout_editor_absoluteX="163dp"
                         tools:layout_editor_absoluteY="68dp" />
@@ -190,20 +197,28 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
             android:text="Lista de lugares fuera de la escuela:"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="81dp"
-            tools:layout_editor_absoluteY="251dp" />
+            app:layout_constraintBottom_toTopOf="@+id/sv_main2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sv_main"
+            tools:ignore="MissingConstraints" />
 
         <ScrollView
             android:id="@+id/sv_main2"
-            android:layout_width="387dp"
-            android:layout_height="94dp"
+            android:layout_width="330dp"
+            android:layout_height="95dp"
+            android:layout_marginStart="8dp"
             android:layout_marginTop="296dp"
-
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="0dp">
+            tools:ignore="MissingConstraints">
 
             <LinearLayout
                 android:id="@+id/ll_scrollMain2"
