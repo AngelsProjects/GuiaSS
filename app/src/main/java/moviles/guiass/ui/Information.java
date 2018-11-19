@@ -19,8 +19,8 @@ public class Information extends AppCompatActivity {
 
     // se hacen binding por medio de butterknife a los objetos de la vista XML en este caso a los TEXTVIEW'S
     // para ello se les asignan mediante los ID's txt_infoTitle, txt_infoDesc que ya se debieron haber asignado en el XML
-    // @BindViews({R.id.txt_infoTitle, R.id.txt_infoDesc})
-    // List<TextView> titles;
+    @BindViews({R.id.txt_title, R.id.txt_titleDesc})
+    List<TextView> titles;
 
 
     // El metodo onCreate se inicializa para crear todos los objetos o darles algun valor
@@ -84,7 +84,7 @@ public class Information extends AppCompatActivity {
 
         }
 
-        // titles.get(0).setText(title);
-        // titles.get(1).setText(description);
+        titles.get(0).setText(title);
+        titles.get(1).setText(description);
     }
 }
