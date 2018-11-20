@@ -23,20 +23,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.Information" />
+        <activity android:name=".ui.InformationActivity" />
         <activity
             android:name=".ui.LoginActivity"
             android:label="@string/title_activity_login" />
         <activity
-            android:name=".ui.DatosGenerales"
+            android:name=".ui.GeneralDataActivity"
             android:label="@string/title_activity_datos_generales"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".ui.DondeRealizar"
+            android:name=".ui.WhereToDoActivity"
             android:label="@string/title_activity_donde_realizar"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".ui.ProcesoPasoaPaso"
+            android:name=".ui.StepByStepActivity"
             android:label="@string/title_activity_proceso_pasoa_paso"
             android:theme="@style/AppTheme"></activity>
     </application>

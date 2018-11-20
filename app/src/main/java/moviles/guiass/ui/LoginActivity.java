@@ -89,7 +89,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         // se manda a llamar la funcioin super que en definicion es como un constructor que guarda la instancia del estado actual
         super.onCreate(savedInstanceState);
 
-        // aqui se asigna la vista al Activity en este caso estamos en el activity Information
+        // aqui se asigna la vista al Activity en este caso estamos en el activity InformationActivity
         // y se  le esta asignando la vista del siguiente repositorio
         // R.layout.activity_information
         // que en definicion por carpetas: res -> layout -> activity_login.xml

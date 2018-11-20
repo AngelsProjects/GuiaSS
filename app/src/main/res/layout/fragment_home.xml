@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:noHistory="true"
-        tools:context=".ui.ProcesoPasoaPaso">
+        tools:context=".ui.StepByStepActivity">
 
         <ScrollView
             android:id="@+id/sv_main"

@@ -9,7 +9,7 @@ import android.view.View;
 
 import moviles.guiass.R;
 
-public class DondeRealizar extends AppCompatActivity {
+public class WhereToDoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -14,7 +14,7 @@ import moviles.guiass.Enum.MenuOptionsEnum;
 import moviles.guiass.R;
 
 
-public class Information extends AppCompatActivity {
+public class InformationActivity extends AppCompatActivity {
 
 
     // se hacen binding por medio de butterknife a los objetos de la vista XML en este caso a los TEXTVIEW'S
@@ -29,7 +29,7 @@ public class Information extends AppCompatActivity {
         // se manda a llamar la funcioin super que en definicion es como un constructor que guarda la instancia del estado actual
         super.onCreate(savedInstanceState);
         TextView texto1, texto2;
-        // aqui se asigna la vista al Activity en este caso estamos en el activity Information
+        // aqui se asigna la vista al Activity en este caso estamos en el activity InformationActivity
         // y se  le esta asignando la vista del siguiente repositorio
         // R.layout.activity_information
         // que en definicion por carpetas: res -> layout -> activity_information.xml
@@ -39,7 +39,7 @@ public class Information extends AppCompatActivity {
         ButterKnife.bind(this);
 
         // con el getIntent().getExtras() accedemos a todos los datos que recive este activity de otro en este caso
-        // el activity main envia un parametro llamado InfoOption al activity Information y lo guardamos en una variable
+        // el activity main envia un parametro llamado InfoOption al activity InformationActivity y lo guardamos en una variable
         // int option
         Bundle bundle = getIntent().getExtras();
         int option = bundle.getInt("InfoOption");
@@ -49,7 +49,7 @@ public class Information extends AppCompatActivity {
         MenuOptionsEnum selected = MenuOptionsEnum.valueOf(option);
 
 
-        // se asignan los datos por default de la vista de Information
+        // se asignan los datos por default de la vista de InformationActivity
         String title = "Informacion";
         String description = "N/A";
 

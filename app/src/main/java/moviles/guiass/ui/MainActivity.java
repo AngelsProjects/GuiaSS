@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // se manda a llamar la funcioin super que en definicion es como un constructor que guarda la instancia del estado actual
         super.onCreate(savedInstanceState);
 
-        // se asigna la vista al Activity en este caso estamos en el activity Information
+        // se asigna la vista al Activity en este caso estamos en el activity InformationActivity
         // y se  le esta asignando la vista del siguiente repositorio
         // R.layout.activity_information
         // que en definicion por carpetas: res -> layout -> activity_main.xml
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         // Con la clase o metodo Intent podremos mandar a llamar a otro activity
         // para ello se crea un intent en el cual recive dos parametros
         // 1: el contexto del paquete de donde se enviara en este caso es desde la clase MainActivity.this el cual es la clase del activity
-        // 2: la clase que del activity que quieres mandar a llamar en etse claso Information.class para acceder a su clase
+        // 2: la clase que del activity que quieres mandar a llamar en etse claso InformationActivity.class para acceder a su clase
         Intent intent;
 
         // creamos una variable bundle para almacenar las variables que le queremos enviar al activity a invocar
@@ -72,27 +72,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             // para ello se hace lo siguiente bundle.putInt("NOMBRE_DEL_PARAMETRO_A_ENVIAR", VALOR_DEL_PARAMETRO);
 
             case R.id.btn_req:
-                intent = new Intent(MainActivity.this, Information.class);
+                intent = new Intent(MainActivity.this, InformationActivity.class);
                 bundle.putInt("InfoOption", RequisitosPrevios.getValue());
                 break;
             case R.id.btn_dh:
-                intent = new Intent(MainActivity.this, DondeRealizar.class);
+                intent = new Intent(MainActivity.this, WhereToDoActivity.class);
                 bundle.putInt("InfoOption", DondeHacerlo.getValue());
                 break;
             case R.id.btn_dss:
-                intent = new Intent(MainActivity.this, DatosGenerales.class);
+                intent = new Intent(MainActivity.this, GeneralDataActivity.class);
                 bundle.putInt("InfoOption", DatosDelServicioSocial.getValue());
                 break;
             case R.id.btn_pp:
-                intent = new Intent(MainActivity.this, ProcesoPasoaPaso.class);
+                intent = new Intent(MainActivity.this, StepByStepActivity.class);
                 bundle.putInt("InfoOption", PrimerosPasos.getValue());
                 break;
             case R.id.btn_ps:
-                intent = new Intent(MainActivity.this, Information.class);
+                intent = new Intent(MainActivity.this, InformationActivity.class);
                 bundle.putInt("InfoOption", PasosSiguientes.getValue());
                 break;
             default:
-                intent = new Intent(MainActivity.this, Information.class);
+                intent = new Intent(MainActivity.this, InformationActivity.class);
                 break;
         }
         // Con nuestra variable intent accedemos a su metodo putExtras para asignarle eseos parametros
