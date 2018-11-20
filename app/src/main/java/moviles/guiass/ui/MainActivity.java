@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 bundle.putInt("InfoOption", PrimerosPasos.getValue());
                 break;
             case R.id.btn_ps:
-                intent = new Intent(MainActivity.this, InformationActivity.class);
+                intent = new Intent(MainActivity.this, NextStepsActivity.class);
                 bundle.putInt("InfoOption", PasosSiguientes.getValue());
                 break;
             default:

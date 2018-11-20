@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".ui.PasosSiguietes"
-    tools:showIn="@layout/activity_pasos_siguientes">
+    tools:context=".ui.NextStepsActivity"
+    tools:showIn="@layout/activity_next_steps">
 
 </android.support.constraint.ConstraintLayout>
