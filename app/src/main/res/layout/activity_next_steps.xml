@@ -186,11 +186,9 @@ que esta firmada y sellada a las oficinas del Servicio social. "
                         android:id="@+id/textViewInfo15"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text=".Se pedirá a tu en cargado de tu servicio social una hoja de
-          aceptación de tu servicio.
-.Firmada ysellada.
-.entregar a las oficinas del servicio social.
-"
+                        android:text=".Se pedirá a tu en cargado de tu servicio social una hoja de aceptación de tu servicio.
+.Firmada y sellada.
+.Entregar a las oficinas del servicio social."
                         tools:layout_editor_absoluteX="163dp"
                         tools:layout_editor_absoluteY="130dp" />
 
