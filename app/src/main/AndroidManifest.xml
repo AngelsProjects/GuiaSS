@@ -38,6 +38,18 @@
         <activity
             android:name=".ui.StepByStepActivity"
             android:label="@string/title_activity_proceso_pasoa_paso"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.PasosSiguientes"
+            android:label="@string/title_activity_pasos_siguientes"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.Moresteps.Reportes"
+            android:label="@string/title_activity_reportes"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.Moresteps.Plandetrabajo"
+            android:label="@string/title_activity_plandetrabajo"
             android:theme="@style/AppTheme"></activity>
     </application>
 

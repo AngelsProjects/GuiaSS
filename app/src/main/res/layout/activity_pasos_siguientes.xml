@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:ignore="MissingConstraints"
+    tools:context=".ui.PasosSiguientes"
+    >
+
+    <!-- aqui se carga el ToolBar que se encuentra es res -> layout -> main_toolbar.xml -->
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <!-- aqui en adelante va el resto que tenga el activity -->
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:noHistory="true"
+        >
+
+        <TextView
+            android:id="@+id/textViewInfo3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:text="Pasos siguientes "
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textViewInfo4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Presentarse en las oficinas del servicio social cuando
+inicie el semestre."
+            app:layout_constraintBottom_toTopOf="@+id/sv_main"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textViewInfo3"
+            tools:ignore="MissingConstraints" />
+
+
+        <ScrollView
+            android:id="@+id/sv_main"
+            android:layout_width="330dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@android:color/holo_green_light">
+
+            <LinearLayout
+                android:id="@+id/ll_scrollMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="175dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:id="@+id/textViewInfo9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/holo_green_light"
+                        android:text="-Presentación."
+
+                        tools:layout_editor_absoluteX="163dp"
+                        tools:layout_editor_absoluteY="68dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewInfo11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=".Se te entregara al inicio del semestre en las oficinas
+ del servicio social."
+                        tools:layout_editor_absoluteX="163dp"
+                        tools:layout_editor_absoluteY="130dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewInfo13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-Sacar dos copias a la carta de presentación.
+.original entregar en tu servicio social.
+.otra que te la firme y selle tu encargado del
+servicio social.
+.Terminado los pasos anteriores entregar la hoja
+que esta firmada y sellada a las oficinas del Servicio social. "
+                        tools:layout_editor_absoluteX="163dp"
+                        tools:layout_editor_absoluteY="130dp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="-Aceptación."
+            app:layout_constraintBottom_toTopOf="@+id/sv_main2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sv_main"
+            app:layout_constraintVertical_bias="0.107"
+            tools:ignore="MissingConstraints" />
+
+        <ScrollView
+            android:id="@+id/sv_main2"
+            android:layout_width="330dp"
+            android:layout_height="95dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="209dp">
+
+            <LinearLayout
+                android:id="@+id/ll_scrollMain2"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="175dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewInfo15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=".Se pedirá a tu en cargado de tu servicio social una hoja de
+          aceptación de tu servicio.
+.Firmada ysellada.
+.entregar a las oficinas del servicio social.
+"
+                        tools:layout_editor_absoluteX="163dp"
+                        tools:layout_editor_absoluteY="130dp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="286dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Entrega de siguientes documentos"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sv_main2"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <Button
+            android:id="@+id/buttonREP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Ver mas"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.203"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>
+
