@@ -29,6 +29,7 @@
     <string name="title_activity_pasos_siguientes">PasosSiguientes</string>
     <string name="title_activity_reportes">Reportes</string>
     <string name="title_activity_plandetrabajo">Plandetrabajo</string>
+    <string name="title_activity_paso_final">PasoFinal</string>
 
 
 </resources>

@@ -50,6 +50,10 @@
         <activity
             android:name=".ui.Moresteps.WorkPlanActivity"
             android:label="@string/title_activity_plandetrabajo"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ui.Moresteps.PasoFinal"
+            android:label="@string/title_activity_paso_final"
             android:theme="@style/AppTheme"></activity>
     </application>
 
