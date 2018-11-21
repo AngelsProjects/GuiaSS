@@ -11,6 +11,8 @@
     <string name="infoDesc">N/A</string>
     <string name="infoTitle">N/A</string>
     <string name="title_activity_login">Iniciar sesion</string>
+    <string name="registry">Registrarse</string>
+    <string name="invited">Invitado</string>
     <!-- Strings related to login -->
     <string name="prompt_email">No. Control</string>
     <string name="prompt_password">Clave</string>
