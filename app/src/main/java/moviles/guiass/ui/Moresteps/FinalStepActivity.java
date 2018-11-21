@@ -9,7 +9,7 @@ import android.view.View;
 
 import moviles.guiass.R;
 
-public class PasoFinal extends AppCompatActivity {
+public class FinalStepActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
