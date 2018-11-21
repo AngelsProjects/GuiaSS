@@ -31,7 +31,8 @@
             android:id="@+id/sv_main"
             android:layout_width="386dp"
             android:layout_height="465dp"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="8dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -39,6 +40,7 @@
                 android:id="@+id/ll_scrollMain"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+
                 android:orientation="vertical"
                 tools:layout_editor_absoluteX="0dp"
                 tools:layout_editor_absoluteY="175dp">
@@ -52,7 +54,10 @@
                         android:id="@+id/textViewInfo3"
                         android:layout_width="138dp"
                         android:layout_height="21dp"
-                        android:text="infotitle"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="Requisitos previos"
                         tools:layout_editor_absoluteX="163dp"
                         tools:layout_editor_absoluteY="68dp" />
                 </LinearLayout>
@@ -60,13 +65,33 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="18dp">
 
                     <TextView
                         android:id="@+id/textViewInfo4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="informacion"
+
+                        android:text="1-Tener 70% de tu carrera terminada.
+-¿No sabes si lo tienes?
+
+Entrar a este link
+https://sge.mexicali.tecnm.mx/alumnos/historico/kardex-calificaciones
+
+Si en ¨Créditos aprobados¨ dice: 182 Podrás realizar tu servicio
+
+2-Saber si ya inicio la inscripciones.
+-¿No lo sabes?
+
+Acude a las oficinas del servicio social
+o
+habla a este teléfono: 5804911
+
+3-Contar con los 5 créditos complementarios.
+-En grado caso de no tener los 182 creditos.
+-Se completaran con los 5 créditos complementarios."
                         tools:layout_editor_absoluteX="163dp"
                         tools:layout_editor_absoluteY="130dp" />
                 </LinearLayout>

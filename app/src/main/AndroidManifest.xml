@@ -54,7 +54,7 @@
         <activity
             android:name=".ui.Moresteps.PasoFinal"
             android:label="@string/title_activity_paso_final"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>
