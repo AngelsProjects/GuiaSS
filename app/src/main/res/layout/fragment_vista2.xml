@@ -48,8 +48,8 @@
         <ScrollView
             android:id="@+id/sv_main"
             android:layout_width="386dp"
-            android:layout_height="465dp"
-            android:layout_marginTop="80dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="16dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 

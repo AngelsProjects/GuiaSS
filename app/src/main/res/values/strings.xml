@@ -11,10 +11,10 @@
     <string name="infoDesc">N/A</string>
     <string name="infoTitle">N/A</string>
     <string name="title_activity_login">Iniciar sesion</string>
-    <string name="registry">Registrarse</string>
+    <string name="registry">Registro</string>
     <string name="invited">Invitado</string>
     <!-- Strings related to login -->
-    <string name="prompt_email">No. Control</string>
+    <string name="prompt_email">No. Control/No. de Empleado</string>
     <string name="prompt_password">Clave</string>
     <string name="action_sign_in">Iniciar sesion</string>
     <string name="action_sign_in_short">Iniciar sesion</string>
@@ -33,6 +33,7 @@
     <string name="title_activity_plandetrabajo">Plandetrabajo</string>
     <string name="title_activity_paso_final">PasoFinal</string>
     <string name="title_activity_previous_requirements">PreviousRequirements</string>
+    <string name="title_activity_teacher_interface">TeacherInterface</string>
 
 
 </resources>
