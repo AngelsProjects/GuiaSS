@@ -31,7 +31,7 @@ public class GeneralDataActivity extends AppCompatActivity {
 */
 
         texto1 = (TextView) findViewById(R.id.textViewInfo5);
-        texto1.setText("Daros generales");
+        texto1.setText("Datos generales");
 
 
     }
