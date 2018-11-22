@@ -59,7 +59,7 @@
                         android:id="@+id/textViewInfo5"
                         android:layout_width="138dp"
                         android:layout_height="21dp"
-                        android:text="Daros generales"
+                        android:text="Datos generales"
                         tools:layout_editor_absoluteX="163dp"
                         tools:layout_editor_absoluteY="68dp" />
                 </LinearLayout>

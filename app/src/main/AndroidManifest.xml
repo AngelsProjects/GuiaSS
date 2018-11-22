@@ -57,7 +57,6 @@
             android:theme="@style/AppTheme" />
         <activity
             android:name=".ui.interfaceActivity.TeacherInterface"
-            android:label="@string/title_activity_teacher_interface"
             android:theme="@style/AppTheme" />
         <activity android:name=".ui.interfaceActivity.GraphicInterfaceSecion"></activity>
     </application>
