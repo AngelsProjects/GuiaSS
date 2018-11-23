@@ -36,7 +36,7 @@
             android:id="@+id/sv_main"
             android:layout_width="380dp"
             android:layout_height="465dp"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="108dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 

@@ -34,6 +34,7 @@
     <string name="title_activity_paso_final">PasoFinal</string>
     <string name="title_activity_previous_requirements">PreviousRequirements</string>
     <string name="title_activity_teacher_interface">TeacherInterface</string>
+    <string name="button">50dp</string>
 
 
 </resources>
