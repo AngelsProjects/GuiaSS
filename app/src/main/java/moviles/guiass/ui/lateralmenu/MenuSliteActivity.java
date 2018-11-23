@@ -80,18 +80,24 @@ public class MenuSliteActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-/*
+
+
+   /*     if (id == R.id.nav_user) {
+
+
         if (id == R.id.nav_camera) {
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.nav_remove) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_add) {
 
         } else if (id == R.id.nav_manage) {
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.nav_search) {
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.nav_login) {
+
+        } else if (id == R.id.nav_signoff) {
 
         }*/
 

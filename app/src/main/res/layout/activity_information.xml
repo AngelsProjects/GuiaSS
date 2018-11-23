@@ -40,7 +40,7 @@
                 android:id="@+id/ll_scrollMain"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
+                android:gravity="center"
                 android:orientation="vertical"
                 tools:layout_editor_absoluteX="0dp"
                 tools:layout_editor_absoluteY="175dp">
@@ -48,6 +48,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:gravity="center"
                     android:orientation="horizontal">
 
                     <TextView
@@ -55,8 +56,9 @@
                         android:layout_width="138dp"
                         android:layout_height="21dp"
                         android:layout_marginStart="18dp"
-                        android:layout_marginTop="20dp"
+                        android:layout_marginTop="10dp"
                         android:layout_marginEnd="8dp"
+                        android:gravity="center"
                         android:text="-Requisitos previos"
                         tools:layout_editor_absoluteX="163dp"
                         tools:layout_editor_absoluteY="68dp" />
@@ -73,7 +75,9 @@
                         android:id="@+id/textViewInfo4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="30dp"
+                        android:gravity="center_horizontal"
                         android:text="1-Tener 70% de tu carrera terminada.
 -¿No sabes si lo tienes?
 
@@ -96,6 +100,9 @@ https://sge.mexicali.tecnm.mx/alumnos/historico/kardex-calificaciones
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
 
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@android:color/holo_green_light"
                         android:text="Si en ¨Créditos aprobados¨ dice: 182 Podrás realizar tu servicio
 
 2-Saber si ya inicio la inscripciones.
