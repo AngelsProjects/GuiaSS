@@ -214,7 +214,7 @@ que esta firmada y sellada a las oficinas del Servicio social. "
             app:layout_constraintVertical_bias="0.2" />
 
         <Button
-            android:id="@+id/buttonREP"
+            android:id="@+id/btnToWork"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"

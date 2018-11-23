@@ -24,11 +24,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <include layout="@layout/content_reportes" />
-
-        <!-- aqui en adelante va el resto que tenga el activity -->
-
-
         <ScrollView
             android:id="@+id/sv_main"
             android:layout_width="366dp"

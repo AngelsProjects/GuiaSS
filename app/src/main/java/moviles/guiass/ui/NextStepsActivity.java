@@ -12,14 +12,15 @@ import butterknife.ButterKnife;
 import moviles.guiass.ui.Moresteps.WorkPlanActivity;
 
 public class NextStepsActivity extends AppCompatActivity implements View.OnClickListener {
-    @BindView(R.id.buttonREP)
+    @BindView(R.id.btnToWork)
     Button btnViewMore;
+    @BindView(R.id.toolbar)
+    Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_next_steps);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ButterKnife.bind(this);
         btnViewMore.setOnClickListener(this);
