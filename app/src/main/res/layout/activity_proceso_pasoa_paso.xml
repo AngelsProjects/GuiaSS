@@ -3,8 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.MainActivity">
+    android:layout_height="match_parent">
     <!-- aqui se carga el ToolBar que se encuentra es res -> layout -> main_toolbar.xml -->
     <include
         android:id="@+id/toolbar"

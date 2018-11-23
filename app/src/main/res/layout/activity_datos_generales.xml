@@ -26,17 +26,17 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
         android:noHistory="true"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         tools:layout_editor_absoluteY="56dp"
-        tools:showIn="@layout/activity_datos_generales"
-        >
+        tools:showIn="@layout/activity_datos_generales">
 
         <ScrollView
             android:id="@+id/sv_main"
             android:layout_width="380dp"
             android:layout_height="465dp"
-            android:layout_marginTop="108dp"
+            android:layout_marginTop="20dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -51,14 +51,14 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="130dp"
                     android:layout_marginTop="3dp"
                     android:orientation="horizontal">
 
                     <TextView
                         android:id="@+id/textViewInfo5"
                         android:layout_width="138dp"
-                        android:layout_height="21dp"
+                        android:layout_height="30dp"
                         android:text="Datos generales"
                         tools:layout_editor_absoluteX="163dp"
                         tools:layout_editor_absoluteY="68dp" />

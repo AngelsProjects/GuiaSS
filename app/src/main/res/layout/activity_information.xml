@@ -55,7 +55,7 @@
                         android:layout_width="138dp"
                         android:layout_height="21dp"
                         android:layout_marginStart="18dp"
-                        android:layout_marginTop="0dp"
+                        android:layout_marginTop="20dp"
                         android:layout_marginEnd="8dp"
                         android:text="-Requisitos previos"
                         tools:layout_editor_absoluteX="163dp"
@@ -79,8 +79,24 @@
 
 Entrar a este link
 https://sge.mexicali.tecnm.mx/alumnos/historico/kardex-calificaciones
+"
+                        tools:layout_editor_absoluteX="163dp"
+                        tools:layout_editor_absoluteY="130dp" />
 
-Si en ¨Créditos aprobados¨ dice: 182 Podrás realizar tu servicio
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="18dp">
+
+                    <TextView
+                        android:id="@+id/textViewInfo2rp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="Si en ¨Créditos aprobados¨ dice: 182 Podrás realizar tu servicio
 
 2-Saber si ya inicio la inscripciones.
 -¿No lo sabes?
@@ -94,6 +110,9 @@ habla a este teléfono: 5804911
 -Se completaran con los 5 créditos complementarios."
                         tools:layout_editor_absoluteX="163dp"
                         tools:layout_editor_absoluteY="130dp" />
+
+
+
                 </LinearLayout>
             </LinearLayout>
         </ScrollView>

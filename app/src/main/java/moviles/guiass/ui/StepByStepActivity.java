@@ -7,9 +7,8 @@ import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-
 import butterknife.BindView;
-import moviles.guiass.R;
+import moviles.guiass.ui.R;
 import moviles.guiass.ui.fragments.HomeFragment;
 import moviles.guiass.ui.fragments.Vista2Fragment;
 import moviles.guiass.ui.fragments.Vista3Fragment;

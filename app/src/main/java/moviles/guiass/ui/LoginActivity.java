@@ -35,7 +35,7 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import moviles.guiass.R;
+import moviles.guiass.ui.R;
 
 import static android.Manifest.permission.READ_CONTACTS;
 

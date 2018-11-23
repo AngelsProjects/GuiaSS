@@ -17,8 +17,6 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         tools:context=".ui.Moresteps.FinalStepActivity"
         tools:showIn="@layout/activity_paso_final">
-
-
         <LinearLayout
             android:id="@+id/ll_scrollMain"
             android:layout_width="match_parent"
@@ -97,7 +95,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 tools:ignore="MissingConstraints" />
         </LinearLayout>
-
         <TextView
             android:id="@+id/textView3"
             android:layout_width="wrap_content"

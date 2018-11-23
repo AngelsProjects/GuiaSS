@@ -1,5 +1,6 @@
 package moviles.guiass.ui;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,11 +11,11 @@ import java.util.List;
 
 import butterknife.BindViews;
 import butterknife.ButterKnife;
-import moviles.guiass.R;
+import moviles.guiass.ui.R;
 
 import static moviles.guiass.Enum.MenuOptionsEnum.*;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends Activity implements View.OnClickListener {
 
     // se hacen binding por medio de butterknife a los objetos de la vista XML en este caso a los TEXTVIEW'S
     // para ello se les asignan mediante los ID's txt_infoTitle, txt_infoDesc que ya se debieron haber asignado en el XML
