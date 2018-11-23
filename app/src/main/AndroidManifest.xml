@@ -58,11 +58,13 @@
         <activity
             android:name=".interfaceActivity.TeacherInterface"
             android:theme="@style/AppTheme" />
+
         <activity android:name=".interfaceActivity.GraphicInterfaceSecion" />
         <activity
             android:name=".lateralmenu.MenuSliteActivity"
             android:label="@string/title_activity_menu_slite"
             android:theme="@style/AppTheme"></activity>
+
     </application>
 
 </manifest>
