@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import moviles.guiass.R;
+import moviles.guiass.ui.R;
 
 public class Vista3Fragment extends Fragment {
     @Nullable

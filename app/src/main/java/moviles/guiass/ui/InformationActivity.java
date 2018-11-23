@@ -11,7 +11,7 @@ import butterknife.BindView;
 import butterknife.BindViews;
 import butterknife.ButterKnife;
 import moviles.guiass.Enum.MenuOptionsEnum;
-import moviles.guiass.R;
+import moviles.guiass.ui.R;
 
 
 public class InformationActivity extends AppCompatActivity {

@@ -8,7 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
 
-import moviles.guiass.R;
+import moviles.guiass.ui.R;
 
 public class GeneralDataActivity extends AppCompatActivity {
 

@@ -35,6 +35,13 @@
     <string name="title_activity_previous_requirements">PreviousRequirements</string>
     <string name="title_activity_teacher_interface">TeacherInterface</string>
     <string name="button">50dp</string>
+    <string name="title_activity_menu_slite">MenuSliteActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Alumno</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
 
 
 </resources>

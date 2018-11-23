@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-import moviles.guiass.R;
+import moviles.guiass.ui.R;
 
 public class NextStepsActivity extends AppCompatActivity {
 

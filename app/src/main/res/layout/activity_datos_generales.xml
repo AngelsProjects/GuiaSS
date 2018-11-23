@@ -29,8 +29,7 @@
         android:noHistory="true"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         tools:layout_editor_absoluteY="56dp"
-        tools:showIn="@layout/activity_datos_generales"
-        >
+        tools:showIn="@layout/activity_datos_generales">
 
         <ScrollView
             android:id="@+id/sv_main"

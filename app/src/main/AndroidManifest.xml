@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="moviles.guiass">
+    package="moviles.guiass.ui">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
@@ -16,49 +16,53 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.InformationActivity" />
+        <activity android:name=".InformationActivity" />
         <activity
-            android:name=".ui.LoginActivity"
+            android:name=".LoginActivity"
             android:label="@string/title_activity_login" />
         <activity
-            android:name=".ui.GeneralDataActivity"
+            android:name=".GeneralDataActivity"
             android:label="@string/title_activity_datos_generales"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".ui.WhereToDoActivity"
+            android:name=".WhereToDoActivity"
             android:label="@string/title_activity_donde_realizar"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".ui.StepByStepActivity"
+            android:name=".StepByStepActivity"
             android:label="@string/title_activity_proceso_pasoa_paso"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".ui.NextStepsActivity"
+            android:name=".NextStepsActivity"
             android:label="@string/title_activity_pasos_siguientes"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".ui.Moresteps.ReportActivity"
+            android:name=".Moresteps.ReportActivity"
             android:label="@string/title_activity_reportes"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".ui.Moresteps.WorkPlanActivity"
+            android:name=".Moresteps.WorkPlanActivity"
             android:label="@string/title_activity_plandetrabajo"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".ui.Moresteps.FinalStepActivity"
+            android:name=".Moresteps.FinalStepActivity"
             android:label="@string/title_activity_paso_final"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".ui.interfaceActivity.TeacherInterface"
+            android:name=".interfaceActivity.TeacherInterface"
             android:theme="@style/AppTheme" />
-        <activity android:name=".ui.interfaceActivity.GraphicInterfaceSecion" />
+        <activity android:name=".interfaceActivity.GraphicInterfaceSecion" />
+        <activity
+            android:name=".lateralmenu.MenuSliteActivity"
+            android:label="@string/title_activity_menu_slite"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>
