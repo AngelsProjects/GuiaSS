@@ -4,16 +4,20 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+
 import butterknife.BindView;
-import moviles.guiass.ui.R;
 import moviles.guiass.ui.fragments.HomeFragment;
 import moviles.guiass.ui.fragments.Vista2Fragment;
 import moviles.guiass.ui.fragments.Vista3Fragment;
 
 public class StepByStepActivity extends AppCompatActivity {
+
+
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
@@ -35,19 +39,16 @@ public class StepByStepActivity extends AppCompatActivity {
             return true;
         }
     };
-    @BindView(R.id.btmNavigation)
-    BottomNavigationView navigation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_proceso_pasoa_paso);
-
+        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.btmNavigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
-        if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
-        }
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
+
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

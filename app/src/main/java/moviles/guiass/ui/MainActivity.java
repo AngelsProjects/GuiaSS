@@ -86,7 +86,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
             case R.id.btn_pp:
                 intent = new Intent(MainActivity.this, StepByStepActivity.class);
-                bundle.putInt("InfoOption", PrimerosPasos.getValue());
                 break;
             case R.id.btn_ps:
                 intent = new Intent(MainActivity.this, NextStepsActivity.class);

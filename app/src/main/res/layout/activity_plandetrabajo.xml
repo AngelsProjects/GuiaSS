@@ -8,41 +8,40 @@
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".Moresteps.WorkPlanActivity">
 
-    tools:ignore="MissingConstraints">
-    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ui.Moresteps.WorkPlanActivity">
-
-        <include
-            android:id="@+id/toolbar"
-            layout="@layout/main_toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    <include layout="@layout/content_plandetrabajo" />
-        <LinearLayout
-        android:id="@+id/ll_scrollMain"
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/main_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="wrap_content" />
 
-        <TextView
-            android:id="@+id/textViewInfo3"
-            android:layout_width="wrap_content"
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:noHistory="true">
+        <LinearLayout
+            android:id="@+id/ll_scrollMain"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="60dp"
-            android:layout_marginEnd="8dp"
-            android:text="                                  -Plan de trabajo.
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewInfo3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="8dp"
+                android:text="                                  -Plan de trabajo.
 .Se tendrá que crear el siguiente documento basándote en la siguiente imagen. "
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.505"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints" />
-    </LinearLayout>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.505"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
 
         <ScrollView
             android:id="@+id/sv_main"
@@ -93,6 +92,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 tools:ignore="MissingConstraints" />
         </LinearLayout>
+
         <TextView
             android:id="@+id/textView3"
             android:layout_width="286dp"
@@ -111,10 +111,10 @@
         <Button
             android:id="@+id/btnViewMore"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
             android:layout_marginTop="450dp"
+            android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:text="Ver mas"
             app:layout_constraintBottom_toBottomOf="parent"
