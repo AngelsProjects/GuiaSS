@@ -21,54 +21,73 @@
 
 
         <!-- aqui en adelante va el resto que tenga el activity -->
+    <TextView
+        android:id="@+id/textViewInfo36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Interfaz de alumnos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Buscar"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="90dp" />
+
+    <ScrollView
+        android:id="@+id/sv_main2"
+        android:layout_width="330dp"
+        android:layout_height="550dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sv_main"
+        tools:ignore="MissingConstraints">
 
         <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="70dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
             android:noHistory="true"
             tools:context=".ui.interfaceActivity.GraphicInterfaceSecion">
 
-            <TextView
-                android:id="@+id/textViewInfo36"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="8dp"
-                android:text="Pasos siguientes "
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.505"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:ignore="MissingConstraints" />
 
-            <TextView
-                android:id="@+id/textViewInfo4"
+            <Button
+                android:id="@+id/buttonREP"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="47dp"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginBottom="8dp"
-                android:text="Presentarse en las oficinas del servicio social cuando
-inicie el semestre."
-                app:layout_constraintBottom_toTopOf="@+id/sv_main"
+                android:layout_marginBottom="100dp"
+                android:text="Agregar"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/textViewInfo3"
-                tools:ignore="MissingConstraints" />
-
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.018" />
 
             <ScrollView
                 android:id="@+id/sv_main"
                 android:layout_width="330dp"
-                android:layout_height="100dp"
+                android:layout_height="500dp"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="68dp"
+                android:layout_marginTop="80dp"
                 android:layout_marginEnd="8dp"
                 android:background="@android:color/holo_green_light"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -80,6 +99,7 @@ inicie el semestre."
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
+
                     tools:layout_editor_absoluteX="0dp"
                     tools:layout_editor_absoluteY="175dp">
 
@@ -87,12 +107,11 @@ inicie el semestre."
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:orientation="horizontal"
-
                         android:layout_marginStart="1dp"
                         android:layout_marginEnd="0dp"
-                        >
+
+                        android:gravity="center"
+                        android:orientation="horizontal">
 
                         <TextView
                             android:id="@+id/textViewInfo9"
@@ -100,7 +119,7 @@ inicie el semestre."
                             android:layout_height="match_parent"
                             android:layout_marginStart="50dp"
                             android:layout_marginEnd="30dp"
-                            android:text="-Formatos."
+                            android:text="Alumno"
                             tools:layout_editor_absoluteX="163dp"
                             tools:layout_editor_absoluteY="68dp" />
 
@@ -111,9 +130,10 @@ inicie el semestre."
                             android:layout_marginStart="30dp"
                             android:layout_marginEnd="0dp"
                             android:layout_marginBottom="0dp"
-                            android:text="-Se autorizó."
+                            android:text="No.control."
                             tools:layout_editor_absoluteX="163dp"
                             tools:layout_editor_absoluteY="68dp" />
+
                         <TextView
                             android:id="@+id/textViewInfo40"
                             android:layout_width="140dp"
@@ -121,7 +141,7 @@ inicie el semestre."
                             android:layout_marginStart="30dp"
                             android:layout_marginEnd="0dp"
                             android:layout_marginBottom="0dp"
-                            android:text="-Formatos."
+                            android:text="Papeleo."
                             tools:layout_editor_absoluteX="163dp"
                             tools:layout_editor_absoluteY="68dp" />
 
@@ -136,25 +156,25 @@ inicie el semestre."
                         <TextView
                             android:id="@+id/textViewInfo11"
                             android:layout_width="145dp"
-                            android:layout_height="37dp"
+                            android:layout_height="45dp"
                             android:layout_marginStart="0dp"
                             android:layout_marginEnd="0dp"
                             android:layout_marginBottom="0dp"
-                            android:text="Solicitud de servicio social."
+                            android:text="AGUILAR LOJA	MANUEL EDUARDO"
                             tools:layout_editor_absoluteX="163dp"
                             tools:layout_editor_absoluteY="130dp" />
 
-                        <CheckBox
-                            android:id="@+id/checkBox"
-                            android:layout_width="53dp"
-                            android:layout_height="19dp"
-                            android:text="si" />
+                        <TextView
+                            android:id="@+id/textViewInfo12"
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:text="12490337"
+                            tools:layout_editor_absoluteX="163dp"
+                            tools:layout_editor_absoluteY="130dp" />
 
-                        <CheckBox
-                            android:id="@+id/checkBox2"
-                            android:layout_width="56dp"
-                            android:layout_height="19dp"
-                            android:text="no" />
                         <Button
                             android:id="@+id/button"
                             android:layout_width="wrap_content"
@@ -176,115 +196,314 @@ inicie el semestre."
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
 
+
                         <TextView
-                            android:id="@+id/textViewInfo13"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="-Sacar dos copias a la carta de presentación.
-.original entregar en tu servicio social.
-.otra que te la firme y selle tu encargado del
-servicio social.
-.Terminado los pasos anteriores entregar la hoja
-que esta firmada y sellada a las oficinas del Servicio social. "
+                            android:id="@+id/textViewInfo19"
+                            android:layout_width="145dp"
+                            android:layout_height="45dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:text="AGUILAR JARA	MARIA ISABEL"
                             tools:layout_editor_absoluteX="163dp"
                             tools:layout_editor_absoluteY="130dp" />
 
+                        <TextView
+                            android:id="@+id/textViewInfo20"
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:text="12490236"
+                            tools:layout_editor_absoluteX="163dp"
+                            tools:layout_editor_absoluteY="130dp" />
+
+                        <Button
+                            android:id="@+id/button4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:text="Ver mas"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.203"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
                     </LinearLayout>
-                </LinearLayout>
-            </ScrollView>
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="8dp"
-                android:text="-Aceptación."
-                app:layout_constraintBottom_toTopOf="@+id/sv_main2"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.501"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/sv_main"
-                app:layout_constraintVertical_bias="0.555"
-                tools:ignore="MissingConstraints" />
-
-            <ScrollView
-                android:id="@+id/sv_main2"
-                android:layout_width="330dp"
-                android:layout_height="95dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="44dp"
-                android:layout_marginEnd="8dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/sv_main"
-                tools:ignore="MissingConstraints">
-
-                <LinearLayout
-                    android:id="@+id/ll_scrollMain2"
-                    android:layout_width="300dp"
-                    android:layout_height="300dp"
-                    android:orientation="vertical"
-                    tools:layout_editor_absoluteX="30dp"
-                    tools:layout_editor_absoluteY="175dp">
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
 
+
                         <TextView
-                            android:id="@+id/textViewInfo15"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text=".Se pedirá a tu en cargado de tu servicio social una hoja de aceptación de tu servicio.
-.Firmada y sellada.
-.Entregar a las oficinas del servicio social."
+                            android:id="@+id/textViewInfo17"
+                            android:layout_width="145dp"
+                            android:layout_height="45dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:text="ALVARADO ORELLANA BORIS PAUL"
                             tools:layout_editor_absoluteX="163dp"
                             tools:layout_editor_absoluteY="130dp" />
 
+                        <TextView
+                            android:id="@+id/textViewInfo18"
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:text="14402150"
+                            tools:layout_editor_absoluteX="163dp"
+                            tools:layout_editor_absoluteY="130dp" />
+
+                        <Button
+                            android:id="@+id/button3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:text="Ver mas"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.203"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
                     </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
+
+                        <TextView
+                            android:id="@+id/textViewInfo21"
+                            android:layout_width="145dp"
+                            android:layout_height="45dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:text="ARIAS LAZO SANDRA LORENA"
+                            tools:layout_editor_absoluteX="163dp"
+                            tools:layout_editor_absoluteY="130dp" />
+
+                        <TextView
+                            android:id="@+id/textViewInfo22"
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:text="12490333"
+                            tools:layout_editor_absoluteX="163dp"
+                            tools:layout_editor_absoluteY="130dp" />
+
+                        <Button
+                            android:id="@+id/button5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:text="Ver mas"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.203"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/textViewInfo23"
+                            android:layout_width="145dp"
+                            android:layout_height="45dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:text="HURTADO GOMEZ NUBE JANETH"
+                            tools:layout_editor_absoluteX="163dp"
+                            tools:layout_editor_absoluteY="130dp" />
+
+                        <TextView
+                            android:id="@+id/textViewInfo24"
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:text="16490256"
+                            tools:layout_editor_absoluteX="163dp"
+                            tools:layout_editor_absoluteY="130dp" />
+
+                        <Button
+                            android:id="@+id/button6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:text="Ver mas"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.203"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/textViewInfo27"
+                            android:layout_width="145dp"
+                            android:layout_height="45dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:text="	LOPEZ HUERTA DUVAN CRISTOBAL"
+                            tools:layout_editor_absoluteX="163dp"
+                            tools:layout_editor_absoluteY="130dp" />
+
+                        <TextView
+                            android:id="@+id/textViewInfo28"
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:text="13490222"
+                            tools:layout_editor_absoluteX="163dp"
+                            tools:layout_editor_absoluteY="130dp" />
+
+                        <Button
+                            android:id="@+id/button8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:text="Ver mas"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.203"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/textViewInfo29"
+                            android:layout_width="145dp"
+                            android:layout_height="45dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:text="QUEZADA GALARZA	KARINA SESIBEL"
+                            tools:layout_editor_absoluteX="163dp"
+                            tools:layout_editor_absoluteY="130dp" />
+
+                        <TextView
+                            android:id="@+id/textViewInfo30"
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:text="12410235"
+                            tools:layout_editor_absoluteX="163dp"
+                            tools:layout_editor_absoluteY="130dp" />
+
+                        <Button
+                            android:id="@+id/button9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginEnd="0dp"
+                            android:layout_marginBottom="0dp"
+                            android:text="Ver mas"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.203"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                    </LinearLayout>  <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:id="@+id/textViewInfo31"
+                        android:layout_width="145dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:text="VARGAS CORONEL KATHERINE DEL ROCIO"
+                        tools:layout_editor_absoluteX="163dp"
+                        tools:layout_editor_absoluteY="130dp" />
+
+                    <TextView
+                        android:id="@+id/textViewInfo32"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:text="12490444"
+                        tools:layout_editor_absoluteX="163dp"
+                        tools:layout_editor_absoluteY="130dp" />
+
+                    <Button
+                        android:id="@+id/button11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:text="Ver mas"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.203"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
                 </LinearLayout>
-
-
+                </LinearLayout>
             </ScrollView>
 
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="286dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="8dp"
-                android:text="Entrega de siguientes documentos"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/sv_main2"
-                app:layout_constraintVertical_bias="0.2" />
 
-            <Button
-                android:id="@+id/buttonREP"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                android:layout_marginBottom="8dp"
-                android:text="Ver mas"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.203"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
         </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+
+
+
+
+
 
 
 </LinearLayout>

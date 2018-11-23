@@ -59,6 +59,7 @@
             android:name=".ui.interfaceActivity.TeacherInterface"
             android:theme="@style/AppTheme" />
         <activity android:name=".ui.interfaceActivity.GraphicInterfaceSecion" />
+        <activity android:name=".ui.interfaceActivity.InterfaceUser"></activity>
     </application>
 
 </manifest>
