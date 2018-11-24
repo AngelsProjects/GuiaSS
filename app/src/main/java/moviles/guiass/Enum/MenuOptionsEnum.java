@@ -3,6 +3,8 @@ package moviles.guiass.Enum;
 import java.util.HashMap;
 import java.util.Map;
 
+import moviles.guiass.ui.lateralmenu.MenuSliteActivity;
+
 public enum MenuOptionsEnum {
     RequisitosPrevios(0),
     DatosDelServicioSocial(1),
