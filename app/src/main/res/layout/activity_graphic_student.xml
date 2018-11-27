@@ -8,24 +8,22 @@
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:ignore="MissingConstraints">
+    tools:ignore="MissingConstraints"
+    >
 
-
-    <!-- aqui se carga el ToolBar que se encuentra es res -> layout -> main_toolbar.xml -->
-    <include
-        android:id="@+id/toolbar"
-        layout="@layout/main_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-
-    <!-- aqui en adelante va el resto que tenga el activity -->
     <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.interfaceActivity.InterfaceUser">
+        tools:context=".ui.interfaceActivityStudent.graphic_student">
+
+        <!-- aqui se carga el ToolBar que se encuentra es res -> layout -> main_toolbar.xml -->
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
         <LinearLayout
             android:id="@+id/ll_scrollMain2"
@@ -36,21 +34,24 @@
             tools:layout_editor_absoluteY="175dp"
             android:layout_marginStart="20dp">
 
-        <TextView
-            android:id="@+id/nom_inter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:text="Alumno"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints" />
             <TextView
-                android:id="@+id/textView_teacher_nom"
+                android:id="@+id/nom_inter_stu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Alumno"
+                app:layout_constraintBottom_toTopOf="@+id/textView_teacher_nom"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.368"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.938"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/textView_student_nom"
                 android:layout_width="wrap_content"
                 android:layout_height="20dp"
                 android:layout_marginStart="8dp"
@@ -60,58 +61,56 @@
                 android:text="AGUILAR LOJA	MANUEL EDUARDO"
                 app:layout_constraintBottom_toTopOf="@+id/sv_main"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintHorizontal_bias="0.306"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.112"
+                app:layout_constraintVertical_bias="0.475"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/textView_student_con"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="No.Control"
+                app:layout_constraintBottom_toTopOf="@+id/sv_main"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.362"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintVertical_bias="0.0"
                 tools:ignore="MissingConstraints" />
 
-        <TextView
-            android:id="@+id/textView_teacher_con"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:text="No.Control"
-            app:layout_constraintBottom_toTopOf="@+id/sv_main"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.501"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:layout_constraintVertical_bias="0.0"
-            tools:ignore="MissingConstraints" />
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="16dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginEnd="8dp"
-            android:text="12490337"
-            app:layout_constraintBottom_toTopOf="@+id/sv_main"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.506"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textViewInfo4"
-            app:layout_constraintVertical_bias="0.0" />
+            <TextView
+                android:id="@+id/textView_stu_num"
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="8dp"
+                android:text="12490337"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.368"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewInfo4"
+                app:layout_constraintVertical_bias="0.0" />
 
-        <Button
-            android:id="@+id/btn_rem_stu"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:text="Eliminar"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.067"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView3"
-            app:layout_constraintVertical_bias="0.0" />
-
+            <Button
+                android:id="@+id/btn_rem_student"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="292dp"
+                android:text="Eliminar"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.028"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                app:layout_constraintVertical_bias="0.0" />
         </LinearLayout>
 
         <ScrollView
@@ -119,7 +118,7 @@
             android:layout_width="330dp"
             android:layout_height="500dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="180dp"
+            android:layout_marginTop="268dp"
             android:layout_marginEnd="8dp"
             android:background="@android:color/holo_green_light"
             app:layout_constraintEnd_toEndOf="parent"
@@ -145,7 +144,7 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/textView_for"
+                        android:id="@+id/textView_for_stu"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_marginStart="0dp"
@@ -155,7 +154,7 @@
                         tools:layout_editor_absoluteY="68dp" />
 
                     <TextView
-                        android:id="@+id/textView_aut"
+                        android:id="@+id/textView_aut_stu"
                         android:layout_width="90dp"
                         android:layout_height="20dp"
                         android:layout_marginStart="30dp"
@@ -174,7 +173,7 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/textView_solicitud"
+                        android:id="@+id/textView_solicitud_stu"
                         android:layout_width="200dp"
                         android:layout_height="37dp"
                         android:layout_marginStart="0dp"
@@ -185,13 +184,13 @@
                         tools:layout_editor_absoluteY="130dp" />
 
                     <CheckBox
-                        android:id="@+id/checkBox1"
+                        android:id="@+id/checkBox1_stu"
                         android:layout_width="53dp"
                         android:layout_height="19dp"
                         android:text="si" />
 
                     <CheckBox
-                        android:id="@+id/checkBox2"
+                        android:id="@+id/checkBox2_stu"
                         android:layout_width="56dp"
                         android:layout_height="19dp"
                         android:text="no" />
@@ -205,7 +204,7 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/textView_asignacion"
+                        android:id="@+id/textView_asignacion_stu"
                         android:layout_width="200dp"
                         android:layout_height="37dp"
                         android:layout_marginStart="0dp"
@@ -216,13 +215,13 @@
                         tools:layout_editor_absoluteY="130dp" />
 
                     <CheckBox
-                        android:id="@+id/checkBox3"
+                        android:id="@+id/checkBox3_stu"
                         android:layout_width="53dp"
                         android:layout_height="19dp"
                         android:text="si" />
 
                     <CheckBox
-                        android:id="@+id/checkBox4"
+                        android:id="@+id/checkBox4_stu"
                         android:layout_width="56dp"
                         android:layout_height="19dp"
                         android:text="no" />
@@ -235,7 +234,7 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/textView_compromiso"
+                        android:id="@+id/textView_compromiso_stu"
                         android:layout_width="200dp"
                         android:layout_height="37dp"
                         android:layout_marginStart="0dp"
@@ -246,13 +245,13 @@
                         tools:layout_editor_absoluteY="130dp" />
 
                     <CheckBox
-                        android:id="@+id/checkBox5"
+                        android:id="@+id/checkBox5_stu"
                         android:layout_width="53dp"
                         android:layout_height="19dp"
                         android:text="si" />
 
                     <CheckBox
-                        android:id="@+id/checkBox6"
+                        android:id="@+id/checkBox6_stu"
                         android:layout_width="56dp"
                         android:layout_height="19dp"
                         android:text="no" />
@@ -265,7 +264,7 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/textView_control"
+                        android:id="@+id/textView_control_stu"
                         android:layout_width="200dp"
                         android:layout_height="37dp"
                         android:layout_marginStart="0dp"
@@ -276,13 +275,13 @@
                         tools:layout_editor_absoluteY="130dp" />
 
                     <CheckBox
-                        android:id="@+id/checkBox7"
+                        android:id="@+id/checkBox7_stu"
                         android:layout_width="53dp"
                         android:layout_height="19dp"
                         android:text="si" />
 
                     <CheckBox
-                        android:id="@+id/checkBox8"
+                        android:id="@+id/checkBox8_stu"
                         android:layout_width="56dp"
                         android:layout_height="19dp"
                         android:text="no" />
@@ -295,7 +294,7 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/textView_presentacion"
+                        android:id="@+id/textView_presentacion_stu"
                         android:layout_width="200dp"
                         android:layout_height="37dp"
                         android:layout_marginStart="0dp"
@@ -306,13 +305,13 @@
                         tools:layout_editor_absoluteY="130dp" />
 
                     <CheckBox
-                        android:id="@+id/checkBox9"
+                        android:id="@+id/checkBox9_stu"
                         android:layout_width="53dp"
                         android:layout_height="19dp"
                         android:text="si" />
 
                     <CheckBox
-                        android:id="@+id/checkBox10"
+                        android:id="@+id/checkBox10_stu"
                         android:layout_width="56dp"
                         android:layout_height="19dp"
                         android:text="no" />
@@ -325,7 +324,7 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/textView_aceptacion"
+                        android:id="@+id/textView_aceptacion_stu"
                         android:layout_width="200dp"
                         android:layout_height="37dp"
                         android:layout_marginStart="0dp"
@@ -336,13 +335,13 @@
                         tools:layout_editor_absoluteY="130dp" />
 
                     <CheckBox
-                        android:id="@+id/checkBox11"
+                        android:id="@+id/checkBox11_stu"
                         android:layout_width="53dp"
                         android:layout_height="19dp"
                         android:text="si" />
 
                     <CheckBox
-                        android:id="@+id/checkBox12"
+                        android:id="@+id/checkBox12_stu"
                         android:layout_width="56dp"
                         android:layout_height="19dp"
                         android:text="no" />
@@ -355,7 +354,7 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/textView_Kardex"
+                        android:id="@+id/textView_Kardex_stu"
                         android:layout_width="200dp"
                         android:layout_height="37dp"
                         android:layout_marginStart="0dp"
@@ -366,25 +365,26 @@
                         tools:layout_editor_absoluteY="130dp" />
 
                     <CheckBox
-                        android:id="@+id/checkBox13"
+                        android:id="@+id/checkBox13_stu"
                         android:layout_width="53dp"
                         android:layout_height="19dp"
                         android:text="si" />
 
                     <CheckBox
-                        android:id="@+id/checkBox14"
+                        android:id="@+id/checkBox14_stu"
                         android:layout_width="56dp"
                         android:layout_height="19dp"
                         android:text="no" />
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/textView_plan"
+                        android:id="@+id/textView_plan_stu"
                         android:layout_width="200dp"
                         android:layout_height="37dp"
                         android:layout_marginStart="0dp"
@@ -395,25 +395,26 @@
                         tools:layout_editor_absoluteY="130dp" />
 
                     <CheckBox
-                        android:id="@+id/checkBox15"
+                        android:id="@+id/checkBox15_stu"
                         android:layout_width="53dp"
                         android:layout_height="19dp"
                         android:text="si" />
 
                     <CheckBox
-                        android:id="@+id/checkBox16"
+                        android:id="@+id/checkBox16_stu"
                         android:layout_width="56dp"
                         android:layout_height="19dp"
                         android:text="no" />
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/textView_Reporte_1"
+                        android:id="@+id/textView_Reporte_1_stu"
                         android:layout_width="200dp"
                         android:layout_height="37dp"
                         android:layout_marginStart="0dp"
@@ -424,25 +425,26 @@
                         tools:layout_editor_absoluteY="130dp" />
 
                     <CheckBox
-                        android:id="@+id/checkBox17"
+                        android:id="@+id/checkBox17_stu"
                         android:layout_width="53dp"
                         android:layout_height="19dp"
                         android:text="si" />
 
                     <CheckBox
-                        android:id="@+id/checkBox18"
+                        android:id="@+id/checkBox18_stu"
                         android:layout_width="56dp"
                         android:layout_height="19dp"
                         android:text="no" />
 
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/textView_Reporte_2"
+                        android:id="@+id/textView_Reporte_2_stu"
                         android:layout_width="200dp"
                         android:layout_height="37dp"
                         android:layout_marginStart="0dp"
@@ -453,107 +455,111 @@
                         tools:layout_editor_absoluteY="130dp" />
 
                     <CheckBox
-                        android:id="@+id/checkBox19"
+                        android:id="@+id/checkBox19_stu"
                         android:layout_width="53dp"
                         android:layout_height="19dp"
                         android:text="si" />
 
                     <CheckBox
-                        android:id="@+id/checkBox20"
+                        android:id="@+id/checkBox20_stu"
                         android:layout_width="56dp"
                         android:layout_height="19dp"
                         android:text="no" />
 
                 </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/textView_Reporte_3"
-                    android:layout_width="200dp"
-                    android:layout_height="37dp"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginEnd="0dp"
-                    android:layout_marginBottom="0dp"
-                    android:text="Reporte 3"
-                    tools:layout_editor_absoluteX="163dp"
-                    tools:layout_editor_absoluteY="130dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
 
-                <CheckBox
-                    android:id="@+id/checkBox21"
-                    android:layout_width="53dp"
-                    android:layout_height="19dp"
-                    android:text="si" />
+                    <TextView
+                        android:id="@+id/textView_Reporte_3_stu"
+                        android:layout_width="200dp"
+                        android:layout_height="37dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:text="Reporte 3"
+                        tools:layout_editor_absoluteX="163dp"
+                        tools:layout_editor_absoluteY="130dp" />
 
-                <CheckBox
-                    android:id="@+id/checkBox22"
-                    android:layout_width="56dp"
-                    android:layout_height="19dp"
-                    android:text="no" />
+                    <CheckBox
+                        android:id="@+id/checkBox21_stu"
+                        android:layout_width="53dp"
+                        android:layout_height="19dp"
+                        android:text="si" />
 
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/checkBox22_stu"
+                        android:layout_width="56dp"
+                        android:layout_height="19dp"
+                        android:text="no" />
 
-                <TextView
-                    android:id="@+id/textView_liberación"
-                    android:layout_width="200dp"
-                    android:layout_height="37dp"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginEnd="0dp"
-                    android:layout_marginBottom="0dp"
-                    android:text="Carta de liberación"
-                    tools:layout_editor_absoluteX="163dp"
-                    tools:layout_editor_absoluteY="130dp" />
+                </LinearLayout>
 
-                <CheckBox
-                    android:id="@+id/checkBox23"
-                    android:layout_width="53dp"
-                    android:layout_height="19dp"
-                    android:text="si" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
 
-                <CheckBox
-                    android:id="@+id/checkBox24"
-                    android:layout_width="56dp"
-                    android:layout_height="19dp"
-                    android:text="no" />
+                    <TextView
+                        android:id="@+id/textView_liberación_stu"
+                        android:layout_width="200dp"
+                        android:layout_height="37dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:text="Carta de liberación"
+                        tools:layout_editor_absoluteX="163dp"
+                        tools:layout_editor_absoluteY="130dp" />
 
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/checkBox23_stu"
+                        android:layout_width="53dp"
+                        android:layout_height="19dp"
+                        android:text="si" />
 
-                <TextView
-                    android:id="@+id/textView_final"
-                    android:layout_width="200dp"
-                    android:layout_height="37dp"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginEnd="0dp"
-                    android:layout_marginBottom="0dp"
-                    android:text="Reporte final"
-                    tools:layout_editor_absoluteX="163dp"
-                    tools:layout_editor_absoluteY="130dp" />
+                    <CheckBox
+                        android:id="@+id/checkBox24_stu"
+                        android:layout_width="56dp"
+                        android:layout_height="19dp"
+                        android:text="no" />
 
-                <CheckBox
-                    android:id="@+id/checkBox25"
-                    android:layout_width="53dp"
-                    android:layout_height="19dp"
-                    android:text="si" />
+                </LinearLayout>
 
-                <CheckBox
-                    android:id="@+id/checkBox26"
-                    android:layout_width="56dp"
-                    android:layout_height="19dp"
-                    android:text="no" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
 
-            </LinearLayout>
+                    <TextView
+                        android:id="@+id/textView_final_stu"
+                        android:layout_width="200dp"
+                        android:layout_height="37dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:text="Reporte final"
+                        tools:layout_editor_absoluteX="163dp"
+                        tools:layout_editor_absoluteY="130dp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox25_stu"
+                        android:layout_width="53dp"
+                        android:layout_height="19dp"
+                        android:text="si" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox26_stu"
+                        android:layout_width="56dp"
+                        android:layout_height="19dp"
+                        android:text="no" />
+
+                </LinearLayout>
             </LinearLayout>
         </ScrollView>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -562,15 +568,15 @@
             >
 
             <TextView
-                android:id="@+id/textView_mail"
+                android:id="@+id/textView_call"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="230dp"
-                android:layout_marginTop="80dp"
+                android:layout_marginTop="170dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="8dp"
                 android:background="@color/colorPrimary"
-                android:text="Mandar mensaje a estudiante:"
+                android:text="Desea llamar a las Oficinas del servicio social:"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
@@ -585,19 +591,19 @@
             android:layout_height="match_parent"
             android:orientation="horizontal"
             tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="0dp"
-            android:layout_marginEnd="8dp">
+            tools:layout_editor_absoluteY="0dp">
 
             <Button
-                android:id="@+id/btn_mail"
+                android:id="@+id/btn_phone"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="250dp"
-                android:layout_marginTop="120dp"
+                android:layout_marginTop="220dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="8dp"
+                android:background="@android:color/transparent"
                 android:ems="5"
-                android:text="mail"
+                android:text="5-80-49-11"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textColor="@android:color/holo_blue_dark"
                 android:textStyle="italic"
@@ -605,11 +611,9 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.814"
                 app:layout_constraintStart_toEndOf="@+id/btn_rem_student"
-                app:layout_constraintTop_toBottomOf="@+id/textView_mail"
+                app:layout_constraintTop_toBottomOf="@+id/textView_call"
                 app:layout_constraintVertical_bias="0.0" />
 
         </LinearLayout>
     </android.support.constraint.ConstraintLayout>
-
-
 </LinearLayout>
