@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_user_stu"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Alumnos" />
+        <item
+            android:id="@+id/nav_remove_stu"
+            android:icon="@drawable/ic_remove_circle_black_24dp"
+            android:title="Eliminar" />
+        <item
+            android:id="@+id/nav_add_stu"
+            android:icon="@drawable/ic_add_circle_black_24dp"
+            android:title="Suscribirse" />
+        <item
+            android:id="@+id/nav_manage_stu"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Menu inicio" />
+        <item
+            android:id="@+id/nav_search_stu"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="Buscar" />
+    </group>
+
+    <item android:title="sesión">
+        <menu>
+            <item
+                android:id="@+id/nav_login_stu"
+                android:icon="@drawable/ic_menu_share"
+                android:title="iniciar sesión" />
+            <item
+                android:id="@+id/nav_signoff_stu"
+                android:icon="@drawable/ic_menu_send"
+                android:title="salir" />
+        </menu>
+    </item>
+
+</menu>

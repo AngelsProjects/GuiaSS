@@ -2,25 +2,31 @@ package moviles.guiass.ui;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.support.design.widget.NavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
 import java.util.List;
 
+import butterknife.BindView;
 import butterknife.BindViews;
 import butterknife.ButterKnife;
 import moviles.guiass.ui.R;
 
 import static moviles.guiass.Enum.MenuOptionsEnum.*;
 
-public class MainActivity extends Activity implements View.OnClickListener {
 
+public class MainActivity extends AppCompatActivity implements View.OnClickListener  {
+    private NavigationView navigationView;
     // se hacen binding por medio de butterknife a los objetos de la vista XML en este caso a los TEXTVIEW'S
     // para ello se les asignan mediante los ID's txt_infoTitle, txt_infoDesc que ya se debieron haber asignado en el XML
     @BindViews({R.id.btn_req, R.id.btn_dh, R.id.btn_dss, R.id.btn_pp, R.id.btn_ps})
     List<Button> btnsInfo;
+
 
     // El metodo onCreate se inicializa para crear todos los objetos o darles algun valor
     @Override
@@ -34,10 +40,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
         // R.layout.activity_information
         // que en definicion por carpetas: res -> layout -> activity_main.xml
         setContentView(R.layout.activity_main);
-
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         //damos por hecho que haremos binding a los objetos ya declarados anteriormente para este Activity
         ButterKnife.bind(this);
 
+        navigationView = (NavigationView) findViewById(R.id.nav_view);
         // realizamos un for para asignarle a cada boton un onClickListener
         // ya asinados por la lista que se realizo antes en butterknife
         // y etse nos servira para escuchar el clicka de cada boton
@@ -47,12 +55,13 @@ public class MainActivity extends Activity implements View.OnClickListener {
         for (Button btn : btnsInfo) {
             btn.setOnClickListener(this);
         }
+
+
     }
 
     // aqui se encuentra el listener que se les asigno a los botones anteriormente
     @Override
     public void onClick(View v) {
-
         // Con la clase o metodo Intent podremos mandar a llamar a otro activity
         // para ello se crea un intent en el cual recive dos parametros
         // 1: el contexto del paquete de donde se enviara en este caso es desde la clase MainActivity.this el cual es la clase del activity
@@ -102,5 +111,6 @@ public class MainActivity extends Activity implements View.OnClickListener {
         // se inicializa el nuevo activity
         startActivity(intent);
     }
+
 
 }
