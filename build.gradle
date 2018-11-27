@@ -41,7 +41,7 @@ ext {
     materialStepperVersion = '2.4.0-alpha'
     retrofitVersion = '2.4.0'
     supportLibraryVersion = '28.0.0'
-
+    picassoVersion = '2.71828'
     //Test dependencies
     espressoVersion = '3.0.2'
     junitVersion = '4.12'

@@ -16,6 +16,7 @@ import butterknife.BindView;
 import butterknife.BindViews;
 import butterknife.ButterKnife;
 import moviles.guiass.ui.R;
+import moviles.guiass.ui.lateralmenu.MenuSliteActivity;
 
 import static moviles.guiass.Enum.MenuOptionsEnum.*;
 
@@ -24,7 +25,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private NavigationView navigationView;
     // se hacen binding por medio de butterknife a los objetos de la vista XML en este caso a los TEXTVIEW'S
     // para ello se les asignan mediante los ID's txt_infoTitle, txt_infoDesc que ya se debieron haber asignado en el XML
-    @BindViews({R.id.btn_req, R.id.btn_dh, R.id.btn_dss, R.id.btn_pp, R.id.btn_ps})
+    @BindViews({R.id.btn_req, R.id.btn_dh, R.id.btn_dss, R.id.btn_pp, R.id.btn_ps, R.id.btn_menu})
     List<Button> btnsInfo;
 
 
@@ -80,7 +81,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             // se usa el metodo putInt... en cado caso de ser un string seria putString e igual para
             // cualquier otro tipo de dato
             // para ello se hace lo siguiente bundle.putInt("NOMBRE_DEL_PARAMETRO_A_ENVIAR", VALOR_DEL_PARAMETRO);
-
+            case R.id.btn_menu:
+                intent = new Intent(MainActivity.this, MenuSliteActivity.class);
+                bundle.putInt("InfoOption", RequisitosPrevios.getValue());
+                break;
             case R.id.btn_req:
                 intent = new Intent(MainActivity.this, InformationActivity.class);
                 bundle.putInt("InfoOption", RequisitosPrevios.getValue());

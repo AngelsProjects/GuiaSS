@@ -17,46 +17,14 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         tools:context=".ui.Moresteps.FinalStepActivity"
         tools:showIn="@layout/activity_paso_final">
-        <LinearLayout
-            android:id="@+id/ll_scrollMain"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textViewInfo31"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="68dp"
-                android:layout_marginEnd="8dp"
-                android:text="-Paso final."
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.505"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:ignore="MissingConstraints" />
-
-            <TextView
-                android:id="@+id/textViewInfo32"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="8dp"
-                android:text=" -Realizar el reporte final
-.seguir los pasos del formato."
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.505"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:ignore="MissingConstraints" />
-        </LinearLayout>
 
         <ScrollView
             android:id="@+id/sv_main"
             android:layout_width="366dp"
             android:layout_height="250dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="84dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
             android:gravity="center"
@@ -64,14 +32,54 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
+            <LinearLayout
+                android:id="@+id/ll_scrollMain6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical">
 
+            <LinearLayout
+                android:id="@+id/ll_scrollMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textViewInfo31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="68dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="-Paso final."
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.505"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/textViewInfo32"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text=" -Realizar el reporte final
+.seguir los pasos del formato."
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.505"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints" />
+            </LinearLayout>
 
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/reportefindoc" />
-
+            </LinearLayout>
         </ScrollView>
 
         <LinearLayout
