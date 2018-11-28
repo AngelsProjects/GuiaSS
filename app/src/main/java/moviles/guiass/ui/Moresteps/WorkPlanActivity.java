@@ -32,7 +32,7 @@ public class WorkPlanActivity extends AppCompatActivity implements View.OnClickL
                 .load("https://www.simplifiedcoding.net/wp-content/uploads/2015/10/advertise.png")
                 // .placeholder(R.drawable.plandoc)   // optional
                 // .error(R.drawable.plandoc)      // optional
-                // .resize(400, 400)                        // optional
+                 .resize(400, 400)                        // optional
                 .into(ivPhoto);
     }
 
