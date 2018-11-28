@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import com.squareup.picasso.Picasso;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import moviles.guiass.ui.R;
@@ -29,10 +30,10 @@ public class WorkPlanActivity extends AppCompatActivity implements View.OnClickL
         btnViewMore.setOnClickListener(this);
         //Loading Image from docs
         Picasso.get()
-                .load("https://www.simplifiedcoding.net/wp-content/uploads/2015/10/advertise.png")
+                .load("https://i.imgur.com/VQcCUMK.png")
                 // .placeholder(R.drawable.plandoc)   // optional
                 // .error(R.drawable.plandoc)      // optional
-                 .resize(400, 400)                        // optional
+                .resize(400, 400)
                 .into(ivPhoto);
     }
 
