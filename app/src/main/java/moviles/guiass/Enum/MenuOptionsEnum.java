@@ -10,7 +10,11 @@ public enum MenuOptionsEnum {
     DatosDelServicioSocial(1),
     PrimerosPasos(2),
     DondeHacerlo(3),
-    PasosSiguientes(4);
+    PasosSiguientes(4),
+    SolicitudServicio(5),
+    TarjetaControl(6),
+    CartaAsignacion(7),
+    CartaCompromiso(8);
 
     private int selected;
     private static Map map = new HashMap<>();

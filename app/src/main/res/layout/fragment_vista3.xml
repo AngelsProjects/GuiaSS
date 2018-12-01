@@ -93,7 +93,7 @@ social. "
                         android:textSize="18sp" />
 
                     <Button
-                        android:id="@+id/btn_req"
+                        android:id="@+id/btn_ca"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Ver mas" />
@@ -113,7 +113,7 @@ social."
                         android:textSize="18sp" />
 
                     <Button
-                        android:id="@+id/btn_dss"
+                        android:id="@+id/btn_cc"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Ver mas" />
@@ -132,7 +132,7 @@ social."
                         android:textSize="18sp" />
 
                     <Button
-                        android:id="@+id/btn_pp"
+                        android:id="@+id/btn_ss"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Ver mas" />
@@ -152,7 +152,7 @@ servicio social. "
                         android:textSize="18sp" />
 
                     <Button
-                        android:id="@+id/btn_dh"
+                        android:id="@+id/btn_tc"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Ver mas" />
