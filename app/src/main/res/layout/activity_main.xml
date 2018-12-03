@@ -53,8 +53,10 @@
                     <TextView
                         android:id="@+id/txt_req"
                         android:layout_width="287dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:text="@string/txt_req"
+                        android:textColor="#000dff"
+                        android:background="@android:color/holo_green_light"
                         android:textSize="18sp" />
 
                     <Button
@@ -72,8 +74,10 @@
                     <TextView
                         android:id="@+id/txt_dss"
                         android:layout_width="287dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:text="@string/txt_dss"
+                        android:textColor="#000dff"
+                        android:background="@android:color/holo_blue_light"
                         android:textSize="18sp" />
 
                     <Button
@@ -91,8 +95,10 @@
                     <TextView
                         android:id="@+id/txt_dh"
                         android:layout_width="287dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:text="@string/txt_dh"
+                        android:textColor="#000dff"
+                        android:background="@android:color/holo_green_light"
                         android:textSize="18sp" />
 
                     <Button
@@ -110,8 +116,10 @@
                     <TextView
                         android:id="@+id/txt_pp"
                         android:layout_width="287dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:text="@string/txt_pp"
+                        android:textColor="#000dff"
+                        android:background="@android:color/holo_blue_light"
                         android:textSize="18sp" />
 
                     <Button
@@ -129,8 +137,10 @@
                     <TextView
                         android:id="@+id/txt_ps"
                         android:layout_width="287dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:text="@string/txt_ps"
+                        android:textColor="#000dff"
+                        android:background="@android:color/holo_green_light"
                         android:textSize="18sp" />
 
                     <Button

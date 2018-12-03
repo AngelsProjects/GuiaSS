@@ -43,6 +43,8 @@
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="8dp"
                 android:text="Alumno"
+                android:textColor="#000dff"
+                android:background="@android:color/holo_green_light"
                 app:layout_constraintBottom_toTopOf="@+id/textView_teacher_nom"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.368"
