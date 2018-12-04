@@ -9,6 +9,10 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.widget.ImageView;
+
+import com.fasterxml.jackson.databind.Module;
+import com.squareup.picasso.Picasso;
 
 import butterknife.BindView;
 import moviles.guiass.ui.fragments.HomeFragment;
@@ -16,7 +20,8 @@ import moviles.guiass.ui.fragments.Vista2Fragment;
 import moviles.guiass.ui.fragments.Vista3Fragment;
 
 public class StepByStepActivity extends AppCompatActivity {
-
+    @BindView(R.id.imageView_ps)
+    ImageView imageView_ps;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -52,6 +57,9 @@ public class StepByStepActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+
+
     }
 
 }

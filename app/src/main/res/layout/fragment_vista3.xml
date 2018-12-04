@@ -5,10 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="42dp"
+    android:layout_marginEnd="8dp"
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".ui.fragments.Vista3Fragment">
+
     <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
@@ -25,7 +29,7 @@
                 android:layout_width="100dp"
                 android:layout_height="21dp"
                 android:layout_marginStart="5dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="42dp"
                 android:layout_marginEnd="8dp"
                 android:text="Formato:"
                 tools:layout_editor_absoluteX="163dp"
@@ -33,12 +37,14 @@
 
             <TextView
                 android:id="@+id/textViewInfo25"
-                android:layout_width="108dp"
+                android:layout_width="wrap_content"
                 android:layout_height="21dp"
                 android:layout_marginStart="0dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="22dp"
                 android:layout_marginEnd="8dp"
                 android:text="Para entregar"
+                android:textColor="#000dff"
+                android:background="@android:color/holo_green_light"
                 tools:layout_editor_absoluteX="163dp"
                 tools:layout_editor_absoluteY="68dp" />
 
@@ -47,7 +53,7 @@
                 android:layout_width="130dp"
                 android:layout_height="21dp"
                 android:layout_marginStart="5dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="42dp"
                 android:layout_marginEnd="0dp"
                 android:text="Ejemplo de formato:"
                 tools:layout_editor_absoluteX="163dp"
@@ -72,7 +78,7 @@
             <LinearLayout
                 android:id="@+id/ll_scrollMain"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -89,7 +95,7 @@ social. "
                         android:textSize="18sp" />
 
                     <Button
-                        android:id="@+id/btn_req"
+                        android:id="@+id/btn_ca"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Ver mas" />
@@ -109,7 +115,7 @@ social."
                         android:textSize="18sp" />
 
                     <Button
-                        android:id="@+id/btn_dss"
+                        android:id="@+id/btn_cc"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Ver mas" />
@@ -128,7 +134,7 @@ social."
                         android:textSize="18sp" />
 
                     <Button
-                        android:id="@+id/btn_pp"
+                        android:id="@+id/btn_ss"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Ver mas" />
@@ -148,7 +154,7 @@ servicio social. "
                         android:textSize="18sp" />
 
                     <Button
-                        android:id="@+id/btn_dh"
+                        android:id="@+id/btn_tc"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Ver mas" />

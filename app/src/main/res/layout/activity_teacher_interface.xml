@@ -46,18 +46,29 @@
                 android:id="@+id/textViewInfo35"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="50dp"
+                android:layout_marginStart="150dp"
                 android:layout_marginTop="12dp"
                 android:layout_marginEnd="50dp"
-                android:text="-Solo personal de oficina del servicio social"
+                android:text="Añadir alumno"
+                android:textColor="#000dff"
+                android:background="@android:color/holo_green_light"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.505"
                 app:layout_constraintStart_toStartOf="parent"
                 tools:ignore="MissingConstraints" />
+
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
+                <AutoCompleteTextView
+                    android:id="@+id/email"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_email"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true" />
 
                 <ImageView
                     android:id="@+id/imageView6"
@@ -100,7 +111,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:text="@string/action_sign_in"
+                android:text="@string/action_sign_up"
                 android:textStyle="bold" />
 
 

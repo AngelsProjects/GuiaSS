@@ -17,6 +17,7 @@
     <string name="prompt_email">No. Control/No. de Empleado</string>
     <string name="prompt_password">Clave</string>
     <string name="action_sign_in">Iniciar sesion</string>
+    <string name="action_sign_up">Registrarse</string>
     <string name="action_sign_in_short">Iniciar sesion</string>
     <string name="error_invalid_email">El numero de control es incorrecto</string>
     <string name="error_invalid_password">La contraseña es demaciado corta</string>
@@ -25,6 +26,13 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+    <!-- String add students-->
+    <string name="prompt_nombre">Nombre completo</string>
+    <string name="prompt_controlnumber">Número de control</string>
+    <string name="prompt_email_student">Correo</string>
+    <string name="prompt_key">Contraseña</string>
+    <string name="prompt_rep_key">Confirmar contraseña</string>
+    <!-- -->
     <string name="title_activity_datos_generales">DatosGenerales</string>
     <string name="title_activity_donde_realizar">DondeRealizar</string>
     <string name="title_activity_proceso_pasoa_paso">ProcesoPasoaPaso</string>

@@ -58,7 +58,9 @@
                         android:layout_marginStart="8dp"
                         android:layout_marginTop="12dp"
                         android:layout_marginEnd="8dp"
-                        android:text="-Reportes."
+                        android:text="Reportes."
+                        android:textColor="#000dff"
+                        android:background="@android:color/holo_green_light"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.505"
                         app:layout_constraintStart_toStartOf="parent"
@@ -82,13 +84,13 @@
                 </LinearLayout>
 
                 <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="350dp"
+                    android:id="@+id/imageView_winrar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="0dp"
                     android:layout_marginEnd="8dp"
-                    android:src="@drawable/repdoc" />
+                   />
 
             </LinearLayout>
 
@@ -138,13 +140,13 @@
                 </LinearLayout>
 
                 <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="200dp"
+                    android:id="@+id/imageView_peri"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="0dp"
                     android:layout_marginEnd="8dp"
-                    android:src="@drawable/termdoc" />
+                     />
             </LinearLayout>
 
         </ScrollView>
@@ -161,7 +163,7 @@
                 android:layout_width="286dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="455dp"
+                android:layout_marginTop="480dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="8dp"
                 android:text="Paso final"

@@ -63,7 +63,12 @@
             android:name=".lateralmenu.MenuSliteActivity"
             android:label="@string/title_activity_menu_slite"
             android:theme="@style/AppTheme" />
-        <activity android:name=".interfaceActivityStudent.graphic_student"></activity>
+        <activity android:name=".interfaceActivityStudent.graphic_student" />
+        <activity android:name=".interfaceActivity.AddStudent" />
+        <activity android:name=".serviceDocuments.SolicitudServicio" />
+        <activity android:name=".serviceDocuments.TarjetaControl" />
+        <activity android:name=".serviceDocuments.CartaAsignacion" />
+        <activity android:name=".serviceDocuments.CartaCompromiso"></activity>
     </application>
 
 </manifest>
