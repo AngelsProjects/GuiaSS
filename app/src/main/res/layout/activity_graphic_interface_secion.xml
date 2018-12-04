@@ -20,23 +20,11 @@
             android:layout_height="wrap_content" />
 
 
-        <!-- aqui en adelante va el resto que tenga el activity -->
-    <TextView
-        android:id="@+id/textViewInfo36"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:text="Interfaz de alumnos"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="0dp" />
-
     <EditText
         android:id="@+id/editText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Buscar"

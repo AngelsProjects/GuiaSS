@@ -26,7 +26,7 @@ public class MemoryDocumentsDataSource implements IMemoryDocumentsDataSource {
         if (mCachedDocuments == null) {
             mCachedDocuments = new LinkedHashMap<>();
         }
-        mCachedDocuments.put(document.getNumber(), document);
+        mCachedDocuments.put(document.getId(), document);
     }
 
     @Override

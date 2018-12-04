@@ -6,19 +6,27 @@ import java.io.IOException;
 import java.util.Date;
 
 public class Document {
-    private int number;
+    private int id;
+    private int userId;
     private String name;
-    private String url;
-    private boolean complete;
-    private Date dateModified;
-    private Date dateDelivered;
+    private boolean isCorrect;
+    private Date modifyDate;
+    private Date createdDate;
 
-    public int getNumber() {
-        return number;
+    public int getId() {
+        return id;
     }
 
-    public void setNumber(int number) {
-        this.number = number;
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
     public String getName() {
@@ -29,36 +37,28 @@ public class Document {
         this.name = name;
     }
 
-    public String getUrl() {
-        return url;
+    public boolean isCorrect() {
+        return isCorrect;
     }
 
-    public void setUrl(String url) {
-        this.url = url;
+    public void setCorrect(boolean correct) {
+        isCorrect = correct;
     }
 
-    public boolean isComplete() {
-        return complete;
+    public Date getModifyDate() {
+        return modifyDate;
     }
 
-    public void setComplete(boolean complete) {
-        this.complete = complete;
+    public void setModifyDate(Date modifyDate) {
+        this.modifyDate = modifyDate;
     }
 
-    public Date getDateModified() {
-        return dateModified;
+    public Date getCreatedDate() {
+        return createdDate;
     }
 
-    public void setDateModified(Date dateModified) {
-        this.dateModified = dateModified;
-    }
-
-    public Date getDateDelivered() {
-        return dateDelivered;
-    }
-
-    public void setDateDelivered(Date dateDelivered) {
-        this.dateDelivered = dateDelivered;
+    public void setCreatedDate(Date createdDate) {
+        this.createdDate = createdDate;
     }
 
     @Override
