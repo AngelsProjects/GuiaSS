@@ -13,13 +13,15 @@
     <string name="title_activity_login">Iniciar sesion</string>
     <string name="registry">Registro</string>
     <string name="invited">Invitado</string>
+    <string name="more_info">Ver mas</string>
+
     <!-- Strings related to login -->
     <string name="prompt_email">No. Control/No. de Empleado</string>
     <string name="prompt_password">Clave</string>
     <string name="action_sign_in">Iniciar sesion</string>
     <string name="action_sign_up">Registrarse</string>
     <string name="action_sign_in_short">Iniciar sesion</string>
-    <string name="error_invalid_email">El numero de control es incorrecto</string>
+    <string name="error_invalid_control">El numero de control es incorrecto</string>
     <string name="error_invalid_password">La contraseña es demaciado corta</string>
     <string name="error_incorrect_password">La contraseña es incorrecta</string>
     <string name="error_field_required">Este campo es obligatorio</string>
