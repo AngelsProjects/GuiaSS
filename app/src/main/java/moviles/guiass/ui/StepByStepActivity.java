@@ -22,7 +22,10 @@ import moviles.guiass.ui.fragments.Vista3Fragment;
 public class StepByStepActivity extends AppCompatActivity {
     @BindView(R.id.imageView_ps)
     ImageView imageView_ps;
-
+    @BindView(R.id.toolbar)
+    Toolbar toolbar;
+    @BindView(R.id.btmNavigation)
+    BottomNavigationView navigation;
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
@@ -49,15 +52,11 @@ public class StepByStepActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_proceso_pasoa_paso);
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.btmNavigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
 
-
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
 
 
     }

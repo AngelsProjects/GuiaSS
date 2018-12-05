@@ -15,7 +15,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:context=".ui.Moresteps.FinalStepActivity"
         tools:showIn="@layout/activity_paso_final">
 
 
@@ -26,12 +25,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="30dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:gravity="center"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_marginBottom="8dp">
             <LinearLayout
                 android:id="@+id/ll_scrollMain6"
                 android:layout_width="match_parent"
@@ -78,10 +72,9 @@
             </LinearLayout>
 
             <ImageView
-                android:id="@+id/imageView4"
+                android:id="@+id/img_final"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/reportefindoc" />
+                android:layout_height="match_parent" />
             </LinearLayout>
         </ScrollView>
 

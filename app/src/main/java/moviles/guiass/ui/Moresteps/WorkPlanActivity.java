@@ -31,9 +31,7 @@ public class WorkPlanActivity extends AppCompatActivity implements View.OnClickL
         //Loading Image from docs
         Picasso.get()
                 .load("https://i.imgur.com/VQcCUMK.png")
-                // .placeholder(R.drawable.plandoc)   // optional
-                // .error(R.drawable.plandoc)      // optional
-                .resize(400, 400)
+                // .placeholder(R.drawable.plandoc)
                 .into(ivPhoto);
     }
 

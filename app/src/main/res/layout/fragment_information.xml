@@ -1,45 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginStart="8dp"
-    android:layout_marginTop="30dp"
-    android:layout_marginEnd="8dp"
     android:fitsSystemWindows="true"
-    android:gravity="center_horizontal"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context=".fragments.Vista2Fragment">
+    tools:context=".views.InformationFragment">
 
-    <android.support.constraint.ConstraintLayout
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:noHistory="true">
 
-        <ImageView
-            android:id="@+id/imageView_ps"
-            android:layout_width="match_parent"
-            android:layout_height="220dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="100dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+        android:noHistory="true">
 
         <ScrollView
             android:id="@+id/sv_main"
-            android:layout_width="386dp"
-            android:layout_height="300dp"
-            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="18dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -48,24 +32,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
+
                 tools:layout_editor_absoluteX="0dp"
                 tools:layout_editor_absoluteY="175dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:gravity="center"
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/textViewInfo21"
+                        android:id="@+id/textViewInfo3"
                         android:layout_width="wrap_content"
-                        android:layout_height="21dp"
-                        android:layout_marginStart="100dp"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginEnd="8dp"
-                        android:text="Pasos siguientes:"
-                        android:textColor="#000dff"
+                        android:layout_height="match_parent"
                         android:background="@android:color/holo_green_light"
+                        android:gravity="center"
+                        android:text="Requisitos previos"
+                        android:textColor="#000dff"
                         tools:layout_editor_absoluteX="163dp"
                         tools:layout_editor_absoluteY="68dp" />
                 </LinearLayout>
@@ -76,42 +60,59 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/textViewInfo22"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="80dp"
-                        android:layout_marginTop="12dp"
-                        android:layout_marginEnd="8dp"
-                        android:text="Que papeles ocupas:\n\n-Carta asignación servicio social.\n-Carta compromiso servicio social.\n-Solicitud de servicio social.\n-Tarjeta de control de servicio social. "
+                        android:id="@+id/textViewInfo4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginEnd="0dp"
+                        android:gravity="center_horizontal"
+                        android:text="1-Tener 70% de tu carrera terminada.
+-¿No sabes si lo tienes?
+
+Entrar a este link
+https://sge.mexicali.tecnm.mx/alumnos/historico/kardex-calificaciones
+"
                         tools:layout_editor_absoluteX="163dp"
                         tools:layout_editor_absoluteY="130dp" />
+
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="0dp"
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/textViewInfo23"
+                        android:id="@+id/textViewInfo2rp"
                         android:layout_width="wrap_content"
-                        android:layout_height="127dp"
-                        android:layout_marginStart="60dp"
-                        android:layout_marginTop="12dp"
-                        android:layout_marginEnd="8dp"
-                        android:text="Link donde puedes descargar esos formatos:
+                        android:layout_height="wrap_content"
 
-http://www.itmexicali.edu.mx/servicios1/ssocial.html"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@android:color/holo_green_light"
+                        android:text="Si en ¨Créditos aprobados¨ dice: 182 Podrás realizar tu servicio
+
+2-Saber si ya inicio la inscripciones.
+-¿No lo sabes?
+
+Acude a las oficinas del servicio social
+o
+habla a este teléfono: 5804911
+
+3-Contar con los 5 créditos complementarios.
+-En grado caso de no tener los 182 creditos.
+-Se completaran con los 5 créditos complementarios."
                         tools:layout_editor_absoluteX="163dp"
-                        tools:layout_editor_absoluteY="68dp" />
+                        tools:layout_editor_absoluteY="130dp" />
+
 
                 </LinearLayout>
             </LinearLayout>
-
         </ScrollView>
-
-
-
-
     </android.support.constraint.ConstraintLayout>
 </LinearLayout>

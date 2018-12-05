@@ -6,7 +6,7 @@
     <string name="txt_req">Requisitos Previos</string>
     <string name="txt_dss">Datos del ss</string>
     <string name="txt_pp">Primeros pasos</string>
-    <string name="txt_dh">Donde Realizarlo?</string>
+    <string name="txt_dh">¿Donde Realizarlo?</string>
     <string name="txt_ps">Pasos siguientes</string>
     <string name="infoDesc">N/A</string>
     <string name="infoTitle">N/A</string>
@@ -53,6 +53,9 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <string name="nav_header_student">Alumno</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

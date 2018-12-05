@@ -8,14 +8,8 @@
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="moviles.guiass.ui.Moresteps.WorkPlanActivity"
+    tools:context=".views.nextSteps.WorkPlanFragment"
     tools:ignore="MissingConstraints">
-
-    <include
-        android:id="@+id/toolbar"
-        layout="@layout/main_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
 
     <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -54,15 +48,14 @@
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints" />
 
-
         <ImageView
             android:id="@+id/iv_photo"
             android:layout_width="match_parent"
             android:layout_height="195dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="70dp"
-            android:layout_marginEnd="8dp" />
-
+            android:layout_marginEnd="8dp"
+            android:adjustViewBounds="true"/>
 
         <LinearLayout
 
@@ -78,12 +71,12 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="270dp"
                 android:layout_marginEnd="8dp"
-                android:text="      .Llenarlo con lo que se te pide en la hoja.
-     .Firmado y sellado por el encargado de tu servicio social.
- -Kardex.
-    .Sacar para pagar una constancia de estudio.
-    .pedir en servicio escolares un kardex(Constancia con calificaciones).
-    .Entregar las dos hojas en la oficina del servicio social"
+                android:text="\t.Llenarlo con lo que se te pide en la hoja.
+\t.Firmado y sellado por el encargado de tu servicio social.
+-Kardex.
+\t.Sacar para pagar una constancia de estudio.
+\t.pedir en servicio escolares un kardex(Constancia con calificaciones).
+\t.Entregar las dos hojas en la oficina del servicio social"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.505"
                 app:layout_constraintStart_toStartOf="parent"
