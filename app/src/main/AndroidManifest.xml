@@ -22,9 +22,6 @@
 
         </activity>
         <activity
-            android:name=".InformationActivity"
-            android:configChanges="orientation|screenSize" />
-        <activity
             android:name=".LoginActivity"
             android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_login">
@@ -34,41 +31,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".GeneralDataActivity"
-            android:configChanges="orientation|screenSize"
-            android:label="@string/title_activity_datos_generales"
-            android:theme="@style/AppTheme" />
-        <activity
-            android:name=".WhereToDoActivity"
-            android:configChanges="orientation|screenSize"
-            android:label="@string/title_activity_donde_realizar"
-            android:theme="@style/AppTheme" />
-        <activity
-            android:name=".StepByStepActivity"
-            android:configChanges="orientation|screenSize"
-            android:label="@string/title_activity_proceso_pasoa_paso"
-            android:theme="@style/AppTheme" />
-        <activity
-            android:name=".NextStepsActivity"
-            android:configChanges="orientation|screenSize"
-            android:label="@string/title_activity_pasos_siguientes"
-            android:theme="@style/AppTheme" />
-        <activity
-            android:name=".Moresteps.ReportActivity"
-            android:configChanges="orientation|screenSize"
-            android:label="@string/title_activity_reportes"
-            android:theme="@style/AppTheme" />
-        <activity
-            android:name=".Moresteps.WorkPlanActivity"
-            android:configChanges="orientation|screenSize"
-            android:label="@string/title_activity_plandetrabajo"
-            android:theme="@style/AppTheme" />
-        <activity
-            android:name=".Moresteps.FinalStepActivity"
-            android:configChanges="orientation|screenSize"
-            android:label="@string/title_activity_paso_final"
-            android:theme="@style/AppTheme" />
         <activity
             android:name=".interfaceActivity.TeacherInterface"
             android:configChanges="orientation|screenSize"
@@ -84,21 +46,6 @@
         <activity
             android:name=".interfaceActivityStudent.graphic_student"
             android:configChanges="orientation|screenSize" />
-        <activity
-            android:name=".interfaceActivity.AddStudent"
-            android:configChanges="orientation|screenSize" />
-        <activity
-            android:name=".serviceDocuments.SolicitudServicio"
-            android:configChanges="orientation|screenSize" />
-        <activity
-            android:name=".serviceDocuments.TarjetaControl"
-            android:configChanges="orientation|screenSize" />
-        <activity
-            android:name=".serviceDocuments.CartaAsignacion"
-            android:configChanges="orientation|screenSize" />
-        <activity
-            android:name=".serviceDocuments.CartaCompromiso"
-            android:configChanges="orientation|screenSize"></activity>
     </application>
 
 </manifest>
