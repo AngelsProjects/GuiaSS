@@ -3,10 +3,10 @@
 Guia de Servicio Social para alumnos del Instituto Tecnologico de Mexicali
 
 # Tabla de contenido 
-•Introducción
-•Objetivo
-•Justificación
-•Conclusión
+- Introducción
+- Objetivo
+- Justificación
+- Conclusión
 
 # Introducción
 
