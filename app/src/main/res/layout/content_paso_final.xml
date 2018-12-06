@@ -8,6 +8,7 @@
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin">
+
     <ScrollView
         android:id="@+id/sv_main"
         android:layout_width="match_parent"
@@ -16,14 +17,14 @@
         android:layout_marginTop="30dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp">
-    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:showIn="@layout/activity_paso_final">
 
+        <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:showIn="@layout/activity_paso_final">
 
 
             <LinearLayout
@@ -33,93 +34,93 @@
                 android:layout_marginTop="0dp"
                 android:orientation="vertical">
 
+                <LinearLayout
+                    android:id="@+id/ll_scrollMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewInfo31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="68dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@android:color/holo_green_light"
+                        android:text="Paso final."
+                        android:textColor="#000dff"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.505"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="MissingConstraints" />
+
+                    <TextView
+                        android:id="@+id/textViewInfo32"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:text=" -Realizar el reporte final
+.seguir los pasos del formato."
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.505"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:ignore="MissingConstraints" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/img_final"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
             <LinearLayout
-                android:id="@+id/ll_scrollMain"
+                android:id="@+id/ll_scrollMain2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="0dp"
-                android:gravity="center"
+                android:layout_height="match_parent"
+                android:layout_marginTop="360dp"
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/textViewInfo31"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="68dp"
+                    android:id="@+id/textViewInfo30"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="360dp"
                     android:layout_marginEnd="8dp"
-                    android:text="Paso final."
-                    android:textColor="#000dff"
-                    android:background="@android:color/holo_green_light"
+                    android:text="-Carta de liberación.
+.Pedir en tu servicio social una carta de liberación del servicio.
+.firmada y sellada."
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.505"
                     app:layout_constraintStart_toStartOf="parent"
                     tools:ignore="MissingConstraints" />
 
                 <TextView
-                    android:id="@+id/textViewInfo32"
+                    android:id="@+id/textView3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="40dp"
                     android:layout_marginEnd="8dp"
-                    android:text=" -Realizar el reporte final
-.seguir los pasos del formato."
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.505"
-                    app:layout_constraintStart_toStartOf="parent"
-                    tools:ignore="MissingConstraints" />
-            </LinearLayout>
-
-            <ImageView
-                android:id="@+id/img_final"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-            </LinearLayout>
-
-
-        <LinearLayout
-            android:id="@+id/ll_scrollMain2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="360dp"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/textViewInfo30"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="0dp"
-                android:layout_marginTop="360dp"
-                android:layout_marginEnd="8dp"
-                android:text="-Carta de liberación.
-.Pedir en tu servicio social una carta de liberación del servicio.
-.firmada y sellada."
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.505"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:ignore="MissingConstraints" />
-
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-            android:text=" -Entregar el reporte y carta de liberación en la oficina del servicio social.
+                    android:layout_marginBottom="8dp"
+                    android:text=" -Entregar el reporte y carta de liberación en la oficina del servicio social.
 -Final.
 .Se te informara en las oficinas del servicio social que procederá después de entregar todo tu papeleo.
 "
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/sv_main2"
-            app:layout_constraintVertical_bias="0.2" />
-        </LinearLayout>
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/sv_main2"
+                    app:layout_constraintVertical_bias="0.2" />
+            </LinearLayout>
 
-    </android.support.design.widget.CoordinatorLayout>
-</ScrollView>
+        </android.support.design.widget.CoordinatorLayout>
+    </ScrollView>
 
 </LinearLayout>
