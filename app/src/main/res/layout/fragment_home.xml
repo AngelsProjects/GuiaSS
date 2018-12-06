@@ -1,149 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".ui.fragments.HomeFragment">
 
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginEnd="0dp"
-        android:layout_marginBottom="0dp"
-        android:fitsSystemWindows="true"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        tools:context=".ui.fragments.HomeFragment">
+        android:noHistory="true">
 
+        <ScrollView
+            android:id="@+id/sv_main"
+            android:layout_width="386dp"
+            android:layout_height="465dp"
+            android:layout_marginTop="80dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-        <android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:noHistory="true">
-
-            <ScrollView
-                android:id="@+id/sv_main"
-                android:layout_width="294dp"
-                android:layout_height="465dp"
+            <LinearLayout
+                android:id="@+id/ll_scrollMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="8dp"
-                android:layout_marginBottom="8dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="175dp">
 
                 <LinearLayout
-                    android:id="@+id/ll_scrollMain"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="8dp"
-                    android:orientation="vertical"
-                    tools:layout_editor_absoluteX="0dp"
-                    tools:layout_editor_absoluteY="175dp">
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
 
-                    <LinearLayout
+                    <TextView
+                        android:id="@+id/textViewInfo_pp"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/textViewInfo_pp"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginStart="50dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginEnd="50dp"
-                            android:background="@android:color/holo_green_light"
-                            android:gravity="center"
-                            android:text="Proceso Paso a Paso"
-                            android:textColor="#000dff"
-                            tools:layout_editor_absoluteX="163dp"
-                            tools:layout_editor_absoluteY="68dp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/textViewInfo_pp2"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginTop="12dp"
-                            android:layout_marginEnd="8dp"
-                            android:text="Primeros pasos:
--Cerciorarse si es posible realizar el servicio social en fechas de inscripciones, en caso de no contar con los puntos necesarios, entonces esos puntos se puedan completar con los créditos complementarios."
-                            tools:layout_editor_absoluteX="163dp"
-                            tools:layout_editor_absoluteY="130dp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/textViewInfo_pp3"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginTop="12dp"
-                            android:layout_marginEnd="8dp"
-                            android:text="-Asegurarse de estar a tiempo para las inscripciones del servicio social."
-                            tools:layout_editor_absoluteX="163dp"
-                            tools:layout_editor_absoluteY="130dp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/textViewInfo_pp4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginTop="12dp"
-                            android:layout_marginEnd="8dp"
-                            android:text="-Contar con el lugar donde realizara su servicio social y si no cuenta con un sitio, tendrá que hablar en oficinas del servicio social para buscar lugar, pero tendrá que hacerlo a tiempo."
-                            tools:layout_editor_absoluteX="163dp"
-                            tools:layout_editor_absoluteY="130dp" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/textViewInfo_pp5"
-                            android:layout_width="match_parent"
-                            android:layout_height="127dp"
-                            android:layout_marginStart="8dp"
-                            android:layout_marginTop="12dp"
-                            android:layout_marginEnd="8dp"
-                            android:text="-en grado caso de no alcanzar se tendrá que esperar al siguiente semestre."
-                            tools:layout_editor_absoluteX="163dp"
-                            tools:layout_editor_absoluteY="68dp" />
-                    </LinearLayout>
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="50dp"
+                        android:gravity="center"
+                        android:textColor="#000dff"
+                        android:background="@android:color/holo_green_light"
+                        android:text="Proceso Paso a Paso"
+                        tools:layout_editor_absoluteX="163dp"
+                        tools:layout_editor_absoluteY="68dp" />
                 </LinearLayout>
-            </ScrollView>
-        </android.support.constraint.ConstraintLayout>
-    </LinearLayout>
-</RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewInfo_pp2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="Primeros pasos:
+-Cerciorarse si es posible realizar el servicio social en fechas de inscripciones, en caso de no contar con los puntos necesarios, entonces esos puntos se puedan completar con los créditos complementarios."
+                        tools:layout_editor_absoluteX="163dp"
+                        tools:layout_editor_absoluteY="130dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewInfo_pp3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="-Asegurarse de estar a tiempo para las inscripciones del servicio social."
+                        tools:layout_editor_absoluteX="163dp"
+                        tools:layout_editor_absoluteY="130dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewInfo_pp4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="-Contar con el lugar donde realizara su servicio social y si no cuenta con un sitio, tendrá que hablar en oficinas del servicio social para buscar lugar, pero tendrá que hacerlo a tiempo."
+                        tools:layout_editor_absoluteX="163dp"
+                        tools:layout_editor_absoluteY="130dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textViewInfo_pp5"
+                        android:layout_width="match_parent"
+                        android:layout_height="127dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="8dp"
+                        android:text="-en grado caso de no alcanzar se tendrá que esperar al siguiente semestre."
+                        tools:layout_editor_absoluteX="163dp"
+                        tools:layout_editor_absoluteY="68dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>
