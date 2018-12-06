@@ -7,15 +7,14 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.v7.widget.AppCompatEditText;
 import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.inputmethod.EditorInfo;
-import android.widget.AutoCompleteTextView;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import butterknife.BindView;
@@ -24,12 +23,16 @@ import butterknife.ButterKnife;
 public class LoginActivity extends AppCompatActivity {
 
 
-    private EditText mPasswordView;
-    private View mProgressView;
-    private View mLoginFormView;
+    @BindView(R.id.login_progress)
+    View mProgressView;
+    @BindView(R.id.login_form)
+    View mLoginFormView;
+
+    @BindView(R.id.password)
+    AppCompatEditText mPasswordView;
 
     @BindView(R.id.noControl)
-    AutoCompleteTextView mNoControlView;
+    AppCompatEditText mNoControlView;
 
     @BindView(R.id.login_toolbar)
     Toolbar toolbar;
@@ -42,7 +45,6 @@ public class LoginActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         ButterKnife.bind(this);
 
-        mPasswordView = (EditText) findViewById(R.id.password);
         mPasswordView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView textView, int id, KeyEvent keyEvent) {
@@ -62,8 +64,6 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        mLoginFormView = findViewById(R.id.login_form);
-        mProgressView = findViewById(R.id.login_progress);
     }
 
     private void attemptLogin() {
