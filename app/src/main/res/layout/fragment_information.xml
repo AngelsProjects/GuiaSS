@@ -1,101 +1,112 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context=".views.InformationFragment">
+    android:layout_height="match_parent">
 
-    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context=".views.InformationFragment">
 
-        android:noHistory="true">
-
-        <ScrollView
-            android:id="@+id/sv_main"
+        <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
 
-            android:layout_marginStart="18dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="18dp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:noHistory="true">
 
-            <LinearLayout
-                android:id="@+id/ll_scrollMain"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="175dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textViewInfo3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:background="@android:color/holo_green_light"
-                        android:gravity="center"
-                        android:text="Requisitos previos"
-                        android:textColor="#000dff"
-                        tools:layout_editor_absoluteX="163dp"
-                        tools:layout_editor_absoluteY="68dp" />
-                </LinearLayout>
+            <ScrollView
+                android:id="@+id/sv_main"
+                android:layout_width="304dp"
+                android:layout_height="441dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
                 <LinearLayout
+                    android:id="@+id/ll_scrollMain"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
 
-                    <TextView
-                        android:id="@+id/textViewInfo4"
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginStart="0dp"
-                        android:layout_marginTop="30dp"
-                        android:layout_marginEnd="0dp"
-                        android:gravity="center_horizontal"
-                        android:text="1-Tener 70% de tu carrera terminada.
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textViewInfo3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/holo_green_light"
+                            android:gravity="center"
+                            android:text="Requisitos previos"
+                            android:textColor="#000dff"
+
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+
+                        <TextView
+                            android:id="@+id/textViewInfo4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginEnd="0dp"
+                            android:text="1-Tener 70% de tu carrera terminada.
 -¿No sabes si lo tienes?
 
 Entrar a este link
 https://sge.mexicali.tecnm.mx/alumnos/historico/kardex-calificaciones
 "
-                        tools:layout_editor_absoluteX="163dp"
-                        tools:layout_editor_absoluteY="130dp" />
+                          />
 
-                </LinearLayout>
+                    </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="0dp"
-                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="0dp"
+                        android:orientation="horizontal">
 
-                    <TextView
-                        android:id="@+id/textViewInfo2rp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-
-                        android:layout_marginStart="8dp"
-                        android:layout_marginTop="0dp"
-                        android:layout_marginEnd="8dp"
-                        android:background="@android:color/holo_green_light"
-                        android:text="Si en ¨Créditos aprobados¨ dice: 182 Podrás realizar tu servicio
+                        <TextView
+                            android:id="@+id/textViewInfo2rp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@android:color/holo_green_light"
+                            android:text="Si en ¨Créditos aprobados¨ dice: 182 Podrás realizar tu servicio
 
 2-Saber si ya inicio la inscripciones.
 -¿No lo sabes?
@@ -107,12 +118,13 @@ habla a este teléfono: 5804911
 3-Contar con los 5 créditos complementarios.
 -En grado caso de no tener los 182 creditos.
 -Se completaran con los 5 créditos complementarios."
-                        tools:layout_editor_absoluteX="163dp"
-                        tools:layout_editor_absoluteY="130dp" />
+                            tools:layout_editor_absoluteX="163dp"
+                            tools:layout_editor_absoluteY="130dp" />
 
 
+                    </LinearLayout>
                 </LinearLayout>
-            </LinearLayout>
-        </ScrollView>
-    </android.support.constraint.ConstraintLayout>
-</LinearLayout>
+            </ScrollView>
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+</RelativeLayout>
