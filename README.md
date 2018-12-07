@@ -1,5 +1,6 @@
 # GuiaSS
 
+
 Guia de Servicio Social para alumnos del Instituto Tecnologico de Mexicali
 
 # Tabla de contenido 
@@ -7,6 +8,15 @@ Guia de Servicio Social para alumnos del Instituto Tecnologico de Mexicali
 - Objetivo
 - Justificación
 - Conclusión
+
+
+# Cómo utilizar
+Para clonar y ejecutar esta aplicación, necesitará Git instalado en su computadora. Desde su línea de comando:
+- Clone this repository
+$ git clone https://github.com/AngelsProjects/GuiaSS.git.
+
+# Utilizarlo 
+![enter image description here](https://picasaweb.google.com/106450863879956590703/6632061794740710945#6632061797098836258 "image")
 
 # Introducción
 
