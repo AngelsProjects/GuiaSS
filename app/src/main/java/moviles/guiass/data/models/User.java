@@ -3,6 +3,7 @@ package moviles.guiass.data.models;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
+import java.util.Date;
 
 public class User {
     private int noControl;
@@ -10,11 +11,11 @@ public class User {
     private String name;
     private String middleName;
     private String lastName;
-    private String bornDate;
-    private String semester;
-    private String credits;
-    private String createdDate;
-    private String modifyDate;
+    //  private Date bornDate;
+    private int semester;
+    private int credits;
+    // private Date createdDate;
+    // private Date modifyDate;
 
     public int getNoControl() {
         return noControl;
@@ -56,44 +57,20 @@ public class User {
         this.lastName = lastName;
     }
 
-    public String getBornDate() {
-        return bornDate;
-    }
-
-    public void setBornDate(String bornDate) {
-        this.bornDate = bornDate;
-    }
-
-    public String getSemester() {
+    public int getSemester() {
         return semester;
     }
 
-    public void setSemester(String semester) {
+    public void setSemester(int semester) {
         this.semester = semester;
     }
 
-    public String getCredits() {
+    public int getCredits() {
         return credits;
     }
 
-    public void setCredits(String credits) {
+    public void setCredits(int credits) {
         this.credits = credits;
-    }
-
-    public String getCreatedDate() {
-        return createdDate;
-    }
-
-    public void setCreatedDate(String createdDate) {
-        this.createdDate = createdDate;
-    }
-
-    public String getModifyDate() {
-        return modifyDate;
-    }
-
-    public void setModifyDate(String modifyDate) {
-        this.modifyDate = modifyDate;
     }
 
     @Override

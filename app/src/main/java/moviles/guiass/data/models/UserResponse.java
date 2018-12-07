@@ -4,14 +4,14 @@ import java.util.ArrayList;
 
 public class UserResponse {
 
-    private ArrayList<User> results;
+    private ArrayList<User> users;
 
-    public ArrayList<User> getResults() {
-        return results;
+    public ArrayList<User> getUsers() {
+        return users;
     }
 
-    public void setResults(ArrayList<User> results) {
-        this.results = results;
+    public void setUsers(ArrayList<User> users) {
+        this.users = users;
     }
 
 }

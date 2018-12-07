@@ -107,16 +107,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_user:
                 fragment = new UsersFragment();
                 break;
-            case R.id.nav_remove:
-                break;
+         /*   case R.id.nav_remove:
+                break;*/
             case R.id.nav_add:
                 fragment = new AddUserFragment();
                 break;
             case R.id.nav_manage:
                 fragment = new MainFragment();
                 break;
-            case R.id.nav_search:
-                break;
+          /*  case R.id.nav_search:
+                break;*/
             case R.id.nav_login:
             case R.id.nav_signoff:
                 Intent intent = new Intent(MainActivity.this, LoginActivity.class);

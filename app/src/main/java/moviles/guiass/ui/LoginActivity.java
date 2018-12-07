@@ -19,12 +19,16 @@ import android.widget.TextView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import moviles.guiass.ui.views.InformationFragment;
 
-public class LoginActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity implements OnClickListener {
 
+    @BindView(R.id.btn_guest)
+    Button btn_guest;
 
     @BindView(R.id.login_progress)
     View mProgressView;
+
     @BindView(R.id.login_form)
     View mLoginFormView;
 
@@ -44,7 +48,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         setSupportActionBar(toolbar);
         ButterKnife.bind(this);
-
+        btn_guest.setOnClickListener(this);
         mPasswordView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView textView, int id, KeyEvent keyEvent) {
@@ -156,5 +160,14 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.btn_guest:
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(intent);
+                break;
+        }
+    }
 }
 

@@ -27,18 +27,20 @@ public class CloudUsersDataSource implements ICloudUsersDataSource {
     @Override
     public void getUsers(final UserServiceCallback callback, UserCriteria criteria) {
         Call<UserResponse> call = mRestService.fetchUsers();
-
+        System.out.println("Nothing to show");
         call.enqueue(new Callback<UserResponse>() {
             @Override
             public void onResponse(Call<UserResponse> call, Response<UserResponse> response) {
                 if (response.isSuccessful()) {
                     assert response.body() != null;
-                    callback.onLoaded(response.body().getResults());
+                    System.out.println(response.body());
+                    callback.onLoaded(response.body().getUsers());
                 }
             }
 
             @Override
             public void onFailure(Call<UserResponse> call, Throwable t) {
+                System.out.println("Error here" + t.getMessage());
                 callback.onError(t.getMessage());
             }
         });

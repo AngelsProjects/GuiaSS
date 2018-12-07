@@ -8,10 +8,10 @@
             android:id="@+id/nav_user"
             android:icon="@drawable/ic_person_black_24dp"
             android:title="Alumnos" />
-        <item
+        <!--item
             android:id="@+id/nav_remove"
             android:icon="@drawable/ic_remove_circle_black_24dp"
-            android:title="Eliminar" />
+            android:title="Eliminar" /-->
         <item
             android:id="@+id/nav_add"
             android:icon="@drawable/ic_add_circle_black_24dp"
@@ -20,10 +20,10 @@
             android:id="@+id/nav_manage"
             android:icon="@drawable/ic_menu_manage"
             android:title="Datos de SS" />
-        <item
+        <!--item
             android:id="@+id/nav_search"
             android:icon="@drawable/ic_search_black_24dp"
-            android:title="Buscar" />
+            android:title="Buscar" /-->
     </group>
 
     <item android:title="sesión">
