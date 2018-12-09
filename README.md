@@ -16,7 +16,7 @@ Para clonar y ejecutar esta aplicación, necesitará Git instalado en su computa
 $ git clone https://github.com/AngelsProjects/GuiaSS.git.
 
 # Utilizarlo 
-![enter image description here](https://picasaweb.google.com/106450863879956590703/6632061794740710945#6632061797098836258 "image")
+![enter image description here](https://lh3.googleusercontent.com/387Ew-ymTG7PslfIhJSm1jhBDHrC28mFlRsi2cVj8hqLUcrrV7pvPNpskDv241xPwtHCwPxAQqY)
 
 # Introducción
 
@@ -49,3 +49,4 @@ Los motivos por el que se desea realizar esta aplicación son para ayudar al per
 - Retrasos en la documentación.
 
 - Evitar congestión en la oficina del servicio social.
+
