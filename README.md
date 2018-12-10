@@ -21,6 +21,8 @@ $ git clone https://github.com/AngelsProjects/GuiaSS.git.
 ![](https://lh3.googleusercontent.com/4PbgdtwmwGPLCEB_5zuCcMYCeqF3wZ0S7jEwQ1Lupmpo-kYKWeiTP75nzH0xHR3l1fMS0QZTKbc)![enter image description here](https://lh3.googleusercontent.com/1zGCNikQmwP9aI5O63jXUZSfFjH_4D5hE3-HCCK8apoSOsv9JIh1-FHwCQpy0TH9AMAblMja0Uw)
 ![enter image description here](https://lh3.googleusercontent.com/sRasUc0bfBawoLcnzytKcRdErqrsMCFNMueQgzMJkJDreY9JLMUmE8Mii4xSLgUsbnOa5urfQJM)![enter image description here](https://lh3.googleusercontent.com/387Ew-ymTG7PslfIhJSm1jhBDHrC28mFlRsi2cVj8hqLUcrrV7pvPNpskDv241xPwtHCwPxAQqY)
 
+# Cómo ejecutar pruebas de instrumentación
+![enter image description here](https://lh3.googleusercontent.com/_csPiSIxPXqR-qmrwqsWWCm8CAgOkyjEw1afxcNBVSzHTZr00jYZOQLuHtXozuG3i62eGjdRjiU)![enter image description here](https://lh3.googleusercontent.com/BC3HIEsyY8b5-VnI3MlO0tJK7TJurCe5fHOFW22WX9xNfVnVJ_9L5ZyufWgUqxCqCFrkaDxwG2s)![enter image description here](https://lh3.googleusercontent.com/rbRb4RlYgvEuJLGqLslQglb9O1Fmvc5lxmj7cCOrv354C-nCB_iEV-Afg9l3bYs7Xc6MKKDPOXQ)![enter image description here](https://lh3.googleusercontent.com/Hz6Y_s4FUJk44Ln1HVheaJqs0ryKAzeWwIPsIvkkPZCW8ujviWbwS8KRNPU6qsMPdrdHPum0pCA)
 
 # Cómo ejecutar la aplicación
 Para correr esta aplicación se debe tener:
