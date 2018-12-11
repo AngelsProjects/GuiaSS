@@ -25,12 +25,14 @@ $ git clone https://github.com/AngelsProjects/GuiaSS.git.
 ## Logins
 
 
-![enter image description here](http://lechtchenko.azurewebsites.net/img/gif%280%29.gif)
-![enter image description here](http://lechtchenko.azurewebsites.net/img/gif%20%281%29.gif)
+![](http://lechtchenko.azurewebsites.net/img/gif%280%29.gif)
+
+
 ## Add alumnos
 
-![enter image description here](http://lechtchenko.azurewebsites.net/img/gif%20%282%29.gif)
-![enter image description here](http://lechtchenko.azurewebsites.net/img/gif%20%283%29.gif)
+![](http://lechtchenko.azurewebsites.net/img/gif%20%282%29.gif)
+
+
 
 
 # Cómo ejecutar la aplicación
