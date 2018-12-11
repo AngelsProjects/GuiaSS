@@ -27,10 +27,13 @@ $ git clone https://github.com/AngelsProjects/GuiaSS.git.
 
 ![](http://lechtchenko.azurewebsites.net/img/gif%280%29.gif)
 
-![](http://lechtchenko.azurewebsites.net/img/gif%281%29.gif)
+
+
 
 ## Add alumnos
 
+
+![enter image description here](http://lechtchenko.azurewebsites.net/img/gif%283%29.gif)
 
 
 
