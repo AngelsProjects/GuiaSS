@@ -23,15 +23,14 @@ $ git clone https://github.com/AngelsProjects/GuiaSS.git.
 
 # Cómo ejecutar pruebas de instrumentación
 ## Logins
-![enter image description here](https://lh3.googleusercontent.com/zr_-F0HftLsB5OoZwB8dvHXJLhofWizZ6yQPhJJJ_pwLeJYTPKops9dYp1he-GFVOaPyZU9YHo0)
 
 
-
+![enter image description here](http://lechtchenko.azurewebsites.net/img/gif%280%29.gif)
+![enter image description here](http://lechtchenko.azurewebsites.net/img/gif%20%281%29.gif)
 ## Add alumnos
 
-
-![enter image description here](https://lh3.googleusercontent.com/Hz6Y_s4FUJk44Ln1HVheaJqs0ryKAzeWwIPsIvkkPZCW8ujviWbwS8KRNPU6qsMPdrdHPum0pCA)
-
+![enter image description here](http://lechtchenko.azurewebsites.net/img/gif%20%282%29.gif)
+![enter image description here](http://lechtchenko.azurewebsites.net/img/gif%20%283%29.gif)
 
 
 # Cómo ejecutar la aplicación
