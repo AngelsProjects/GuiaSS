@@ -23,8 +23,10 @@ $ git clone https://github.com/AngelsProjects/GuiaSS.git.
 
 # Cómo ejecutar pruebas de instrumentación
 ![enter image description here](https://lh3.googleusercontent.com/_csPiSIxPXqR-qmrwqsWWCm8CAgOkyjEw1afxcNBVSzHTZr00jYZOQLuHtXozuG3i62eGjdRjiU)
+![enter image description here](https://lh3.googleusercontent.com/3nQDJmmlUwINIL5_uU-PPf_msH1yx-DAso-zba98oX2biCymOjaMlS0Rd4SYghAi8qf8G5BNXic)
+![enter image description here](https://lh3.googleusercontent.com/BC3HIEsyY8b5-VnI3MlO0tJK7TJurCe5fHOFW22WX9xNfVnVJ_9L5ZyufWgUqxCqCFrkaDxwG2s)
+![enter image description here](https://lh3.googleusercontent.com/rbRb4RlYgvEuJLGqLslQglb9O1Fmvc5lxmj7cCOrv354C-nCB_iEV-Afg9l3bYs7Xc6MKKDPOXQ)![enter image description here](https://lh3.googleusercontent.com/Hz6Y_s4FUJk44Ln1HVheaJqs0ryKAzeWwIPsIvkkPZCW8ujviWbwS8KRNPU6qsMPdrdHPum0pCA)
 
-![enter image description here](https://lh3.googleusercontent.com/Hz6Y_s4FUJk44Ln1HVheaJqs0ryKAzeWwIPsIvkkPZCW8ujviWbwS8KRNPU6qsMPdrdHPum0pCA)
 
 # Cómo ejecutar la aplicación
 Para correr esta aplicación se debe tener:
