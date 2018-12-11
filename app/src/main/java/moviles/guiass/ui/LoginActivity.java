@@ -109,14 +109,14 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener 
         } else {
             // Show a progress spinner, and kick off a background task to
             // perform the user login attempt.
-            // showProgress(true);
-            if (control == "14490924" && password == "Arci9611") {
+            showProgress(true);
+            if (control.equals("14490924") && password.equals("Arci9611")) {
                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(intent);
             } else {
-                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                startActivity(intent);
+                mPasswordView.setError(getString(R.string.error_incorrect_password));
             }
+            showProgress(false);
         }
     }
 

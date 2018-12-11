@@ -17,7 +17,7 @@ public enum MenuOptionsEnum {
     private int selected;
     private static Map map = new HashMap<>();
 
-    private MenuOptionsEnum(int selected) {
+     MenuOptionsEnum(int selected) {
         this.selected = selected;
     }
 
@@ -26,14 +26,14 @@ public enum MenuOptionsEnum {
             map.put(option.selected, option);
         }
     }
-
+/*
     public static MenuOptionsEnum valueOf(int selected) {
         try {
             return (MenuOptionsEnum) map.get(selected);
         } catch (Exception e) {
             return null;
         }
-    }
+    }*/
 
     public int getValue() {
         return selected;

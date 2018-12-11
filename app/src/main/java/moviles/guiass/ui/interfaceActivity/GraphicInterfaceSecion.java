@@ -90,7 +90,7 @@ public class GraphicInterfaceSecion extends AppCompatActivity implements GuiaSSM
 
     @Override
     public void showUsers(List<User> users) {
-        //      mUsersAdapter.replaceData(users);
+        System.out.println("Hello bitch!14");
         hideList(false);
     }
 

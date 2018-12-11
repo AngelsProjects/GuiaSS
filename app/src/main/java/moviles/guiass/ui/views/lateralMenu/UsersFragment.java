@@ -33,11 +33,11 @@ public class UsersFragment extends Fragment implements GuiaSSMvp.View, View.OnCl
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_users, container, false);
         ButterKnife.bind(this, view);
-   /*     mUsersPresenter = new UserPresenter(
+        mUsersPresenter = new UserPresenter(
                 DependencyProvider.provideUsersRepository(getActivity()),
                 this);
         mUsersPresenter.loadUsers(true);
-*/
+
         button.setOnClickListener(this);
 
         return view;
@@ -55,7 +55,7 @@ public class UsersFragment extends Fragment implements GuiaSSMvp.View, View.OnCl
 
     @Override
     public void showUsers(List<User> users) {
-
+        System.out.println("Hello world!");
     }
 
     @Override
